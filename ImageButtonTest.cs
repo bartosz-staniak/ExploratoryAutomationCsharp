@@ -44,6 +44,8 @@ namespace PageObjectPatternDemo
 
             string buttonDivText = webDriver.FindElement(InitialPageII.button1).Text;
             Assert.AreEqual("Show this image", buttonDivText);
+
+            webDriver.Quit();
         }
     }
 
