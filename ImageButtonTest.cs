@@ -42,7 +42,7 @@ namespace PageObjectPatternDemo
         {
             InitialPageII initialPageII = new InitialPageII(webDriver);
 
-            string buttonDivText = webDriver.FindElement(InitialPage.button1).Text;
+            string buttonDivText = webDriver.FindElement(InitialPageII.button1).Text;
             Assert.AreEqual("Show this image", buttonDivText);
         }
     }
