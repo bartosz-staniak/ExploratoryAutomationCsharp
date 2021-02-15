@@ -52,7 +52,7 @@ namespace PageObjectPatternDemo
 
         public void hideMainDiv()
         {
-            webDriver.FindElement(InitialPageII.sortProducts).Click();
+            webDriver.FindElement(InitialPageII.button1).Click();
             WaitTenSec();
         }
 
