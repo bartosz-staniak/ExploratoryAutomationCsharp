@@ -23,7 +23,7 @@ namespace PageObjectPatternDemo
             this.WaitTenSec();
         }
 
-
+        public static By button1 = By.Id("button1");
         public static By buttonImage = By.Id("buttonImage");
 
         public void hideImage()
