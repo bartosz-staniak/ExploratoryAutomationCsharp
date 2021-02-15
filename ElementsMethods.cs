@@ -41,9 +41,9 @@ namespace PageObjectPatternDemo
     }
 
 
-    public class ResultsPage : InitialPage
+    public class InitialPageII : InitialPage
     {
-        public ResultsPage(IWebDriver driver) : base(driver)
+        public InitialPageII(IWebDriver driver) : base(driver)
         {
             this.sort();
             this.WaitTenSec();
@@ -53,7 +53,7 @@ namespace PageObjectPatternDemo
 
         public void sort()
         {
-            webDriver.FindElement(ResultsPage.sortProducts).Click();
+            webDriver.FindElement(InitialPageII.sortProducts).Click();
             WaitTenSec();
         }
 
