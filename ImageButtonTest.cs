@@ -36,6 +36,15 @@ namespace PageObjectPatternDemo
 
             webDriver.Quit();
         }
+
+        [TestMethod]
+        public void SecondTest()
+        {
+            InitialPage initialPage = new InitialPage(webDriver);
+
+            string buttonDivText = webDriver.FindElment(InitialPage.buttonDiv).Text;
+            Assert.AreEqual("Show this image", buttonDivText);
+        }
     }
 
 }
