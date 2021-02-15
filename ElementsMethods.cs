@@ -23,7 +23,6 @@ namespace PageObjectPatternDemo
             this.WaitTenSec();
         }
 
-        public static By button1 = By.Id("button1");
         public static By buttonImage = By.Id("buttonImage");
 
         public void hideImage()
@@ -49,7 +48,7 @@ namespace PageObjectPatternDemo
             this.WaitTenSec();
         }
 
-        public static By sortProducts = By.Id("IdGoesHere");
+        public static By button1 = By.Id("button1");
 
         public void sort()
         {
