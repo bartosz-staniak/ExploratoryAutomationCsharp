@@ -44,13 +44,13 @@ namespace PageObjectPatternDemo
     {
         public InitialPageII(IWebDriver driver) : base(driver)
         {
-            this.sort();
+            this.hideMainDiv();
             this.WaitTenSec();
         }
 
         public static By button1 = By.Id("button1");
 
-        public void sort()
+        public void hideMainDiv()
         {
             webDriver.FindElement(InitialPageII.sortProducts).Click();
             WaitTenSec();
