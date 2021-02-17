@@ -47,6 +47,15 @@ namespace PageObjectPatternDemo
 
             webDriver.Quit();
         }
+
+        [TestMethod]
+        public void DataListTest()
+        {
+            Datalist dataLIst = new Datalist(webDriver);
+
+
+        }
+        
     }
 
 }
