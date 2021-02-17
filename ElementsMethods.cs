@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,10 +67,31 @@ namespace PageObjectPatternDemo
         }
 
         public static By dataList = By.Id("dataList");
+        public static By opinions = By.Id("opinions");
 
         public void navigateDataList()
         {
-            webDriver.FindElement(dataList).SendKeys("ni");
+            // webDriver.FindElement(dataList).Click();
+
+            Actions action = new Actions(webDriver);
+            // action.MoveToElement(webDriver.FindElement(dataList)).Perform();
+            System.Threading.Thread.Sleep(5000);
+            action.MoveToElement(webDriver.FindElement(dataList))
+                .Click().Build().Perform();
+            System.Threading.Thread.Sleep(5000);
+            action.MoveByOffset(0, 150).Build().Perform();
+            System.Threading.Thread.Sleep(5000);
+            action.Click().Build().Perform();
+            System.Threading.Thread.Sleep(5000);
+            action.Click().Build().Perform();
+            System.Threading.Thread.Sleep(5000);
+
+            
+            /*
+            var list = webDriver.FindElement(opinions);
+            var selectElement = new SelectElement(list);
+            selectElement.SelectByText("okay.");
+            */
         }
     }
 
