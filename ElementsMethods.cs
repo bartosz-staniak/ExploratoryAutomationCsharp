@@ -58,4 +58,19 @@ namespace PageObjectPatternDemo
 
     }
 
+    public class Datalist : InitialPage
+    {
+        public Datalist(IWebDriver driver) : base(driver)
+        {
+            this.navigateDataList();
+        }
+
+        public static By dataList = By.Id("dataList");
+
+        public void navigateDataList()
+        {
+            webDriver.FindElement(dataList).SendKeys("ni");
+        }
+    }
+
 }
