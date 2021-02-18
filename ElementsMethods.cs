@@ -119,6 +119,13 @@ namespace PageObjectPatternDemo
 
             System.Threading.Thread.Sleep(5000);
 
+            Actions action5 = new Actions(webDriver);
+            action5.MoveToElement(webDriver.FindElement(dataList))
+                .Click().ClickAndHold().MoveByOffset(0, 150)
+                .Release()
+                .Click().Build().Perform();
+
+            System.Threading.Thread.Sleep(5000);
 
             /*
             var list = webDriver.FindElement(opinions);
