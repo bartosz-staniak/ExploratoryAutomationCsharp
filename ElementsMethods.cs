@@ -71,6 +71,13 @@ namespace PageObjectPatternDemo
 
         public void navigateDataList()
         {
+
+            SelectElement selectElement = 
+                new SelectElement(webDriver.FindElement(dataList));
+            selectElement.SelectByText("nice!");
+
+            System.Threading.Thread.Sleep(5000);
+
             // webDriver.FindElement(dataList).Click();
 
             // Actions action = new Actions(webDriver);
@@ -106,12 +113,11 @@ namespace PageObjectPatternDemo
             action3.MoveToElement(webDriver.FindElement(dataList))
                 .Click().MoveByOffset(0,150).Build().Perform();
             */
-            
-            System.Threading.Thread.Sleep(5000);
+
 
             // Added action 4 to use the contextClick to see where
             // the script clicks exactly
-            
+
             /*
             Actions action4 = new Actions(webDriver);
             action4.MoveToElement(webDriver.FindElement(dataList))
@@ -119,7 +125,6 @@ namespace PageObjectPatternDemo
                 .ContextClick().Build().Perform();
             */
 
-            System.Threading.Thread.Sleep(5000);
 
             /*
             Actions action5 = new Actions(webDriver);
@@ -131,7 +136,7 @@ namespace PageObjectPatternDemo
                 .Build().Perform();
             */
 
-
+            /*
             System.Threading.Thread.Sleep(5000);
 
             Actions action6 = new Actions(webDriver);
@@ -148,7 +153,7 @@ namespace PageObjectPatternDemo
                 .Build().Perform(); // this just doesn't work
 
             System.Threading.Thread.Sleep(5000);
-
+            */
             /*
             var list = webDriver.FindElement(opinions);
             var selectElement = new SelectElement(list);
