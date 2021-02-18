@@ -53,6 +53,8 @@ namespace PageObjectPatternDemo
         {
             Datalist dataLIst = new Datalist(webDriver);
 
+            webDriver.Quit();
+
 
         }
         
