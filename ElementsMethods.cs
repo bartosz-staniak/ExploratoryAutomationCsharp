@@ -79,7 +79,7 @@ namespace PageObjectPatternDemo
             action.MoveToElement(webDriver.FindElement(dataList))
                 .Click().Build().Perform();
             System.Threading.Thread.Sleep(1000);
-            action.MoveByOffset(10, 150).Build().Perform();
+            action.MoveByOffset(-10, 150).Build().Perform();
             System.Threading.Thread.Sleep(1000);
             action.Click().Build().Perform();
             System.Threading.Thread.Sleep(1000);
