@@ -145,7 +145,7 @@ namespace PageObjectPatternDemo
                 .Release()
                 .Click()
                 .ContextClick()
-                .Build().Perform();
+                .Build().Perform(); // this just doesn't work
 
             System.Threading.Thread.Sleep(5000);
 
