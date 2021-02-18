@@ -87,9 +87,13 @@ namespace PageObjectPatternDemo
             System.Threading.Thread.Sleep(5000);
             action.Click().Build().Perform();
             System.Threading.Thread.Sleep(5000);
+            Actions action2 = new Actions(webDriver);
+            action2.Click().Build().Perform();
+            System.Threading.Thread.Sleep(5000);
 
             // Looks like using the same action object might be just adding
             // actions to one set of them???
+            // Added action2 object to see if there is a difference
 
             
             /*
