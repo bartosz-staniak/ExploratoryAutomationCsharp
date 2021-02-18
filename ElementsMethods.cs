@@ -102,9 +102,10 @@ namespace PageObjectPatternDemo
             action3.MoveToElement(webDriver.FindElement(dataList))
                 .Click().MoveByOffset(0,150).Build().Perform();
 
-            
+            System.Threading.Thread.Sleep(5000);
 
-            
+
+
             /*
             var list = webDriver.FindElement(opinions);
             var selectElement = new SelectElement(list);
