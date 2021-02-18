@@ -88,6 +88,9 @@ namespace PageObjectPatternDemo
             action.Click().Build().Perform();
             System.Threading.Thread.Sleep(5000);
 
+            // Looks like using the same action object might be just adding
+            // actions to one set of them???
+
             
             /*
             var list = webDriver.FindElement(opinions);
