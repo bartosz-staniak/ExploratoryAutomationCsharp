@@ -104,6 +104,14 @@ namespace PageObjectPatternDemo
 
             System.Threading.Thread.Sleep(5000);
 
+            // Added action 4 to use the contextClick to see where
+            // the script clicks exactly
+            
+            Actions action4 = new Actions(webDriver);
+            action4.MoveToElement(webDriver.FindElement(dataList))
+                .ContextClick().Build().Perform();
+
+            System.Threading.Thread.Sleep(5000);
 
 
             /*
