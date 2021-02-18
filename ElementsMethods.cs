@@ -121,9 +121,27 @@ namespace PageObjectPatternDemo
 
             System.Threading.Thread.Sleep(5000);
 
+            /*
             Actions action5 = new Actions(webDriver);
             action5.MoveToElement(webDriver.FindElement(dataList))
                 .Click().ClickAndHold().MoveByOffset(0, 150)
+                .Release()
+                .Click()
+                .ContextClick()
+                .Build().Perform();
+            */
+
+
+            System.Threading.Thread.Sleep(5000);
+
+            Actions action6 = new Actions(webDriver);
+            action6.MoveToElement(webDriver.FindElement(dataList))
+                .Click()
+                .MoveByOffset(10, 0).ContextClick()
+                .MoveByOffset(-10, 0).ContextClick()
+                .MoveByOffset(10, 0).ContextClick()
+                .MoveByOffset(-10, 0).ContextClick()
+                .ClickAndHold().MoveByOffset(0, 150)
                 .Release()
                 .Click()
                 .ContextClick()
