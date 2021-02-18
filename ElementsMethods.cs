@@ -109,6 +109,7 @@ namespace PageObjectPatternDemo
             
             Actions action4 = new Actions(webDriver);
             action4.MoveToElement(webDriver.FindElement(dataList))
+                .MoveByOffset(0,150)
                 .ContextClick().Build().Perform();
 
             System.Threading.Thread.Sleep(5000);
