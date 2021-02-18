@@ -78,11 +78,11 @@ namespace PageObjectPatternDemo
             System.Threading.Thread.Sleep(5000);
             action.MoveToElement(webDriver.FindElement(dataList))
                 .Click().Build().Perform();
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(1000);
             action.MoveByOffset(0, 150).Build().Perform();
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(1000);
             action.Click().Build().Perform();
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(1000);
             action.Click().Build().Perform();
             System.Threading.Thread.Sleep(5000);
 
