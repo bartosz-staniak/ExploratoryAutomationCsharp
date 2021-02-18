@@ -85,6 +85,8 @@ namespace PageObjectPatternDemo
             System.Threading.Thread.Sleep(1000);
             action.Click().Build().Perform();
             System.Threading.Thread.Sleep(5000);
+            action.Click().Build().Perform();
+            System.Threading.Thread.Sleep(5000);
 
             
             /*
