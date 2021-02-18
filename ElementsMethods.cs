@@ -72,6 +72,8 @@ namespace PageObjectPatternDemo
         public void navigateDataList()
         {
 
+            webDriver.FindElement(Datalist.dataList).Click();
+
             SelectElement selectElement = 
                 new SelectElement(webDriver.FindElement(dataList));
             selectElement.SelectByText("nice!");
