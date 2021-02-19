@@ -71,8 +71,9 @@ namespace PageObjectPatternDemo
 
         public void navigateDataList()
         {
+            webDriver.FindElement(dataList).SendKeys("nice!");
 
-            
+            System.Threading.Thread.Sleep(5000);
         }
     }
 
