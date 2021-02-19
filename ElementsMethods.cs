@@ -72,7 +72,7 @@ namespace PageObjectPatternDemo
         public void navigateDataList()
         {
 
-            webDriver.FindElement(Datalist.dataList).Click();
+            // webDriver.FindElement(Datalist.dataList).Click();
 
             System.Threading.Thread.Sleep(3000);
 
