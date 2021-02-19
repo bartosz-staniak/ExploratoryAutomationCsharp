@@ -82,7 +82,7 @@ namespace PageObjectPatternDemo
 
             SelectElement selectElement = 
                 new SelectElement(webDriver.FindElement(dataList));
-            selectElement.SelectByText("nice!");
+            // selectElement.SelectByText("nice!");
 
             System.Threading.Thread.Sleep(5000);
 
