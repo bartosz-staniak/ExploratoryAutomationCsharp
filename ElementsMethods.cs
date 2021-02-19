@@ -87,6 +87,10 @@ namespace PageObjectPatternDemo
 
             System.Threading.Thread.Sleep(5000);
 
+            action.ContextClick().Build().Perform();
+
+            System.Threading.Thread.Sleep(5000);
+
             // webDriver.FindElement(dataList).Click();
 
             // Actions action = new Actions(webDriver);
