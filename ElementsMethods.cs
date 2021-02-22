@@ -68,10 +68,12 @@ namespace PageObjectPatternDemo
 
         public static By dataList = By.Id("dataList");
         public static By opinions = By.Id("opinions");
+        public static By opinionOne = By.XPath("//*[@id='opinions']/option[1]");
 
         public void navigateDataList()
         {
-            webDriver.FindElement(dataList).SendKeys("nice!");
+            string opinionOneToString = opinionOne.ToString();
+            webDriver.FindElement(dataList).SendKeys(opinionOneToString);
 
             System.Threading.Thread.Sleep(5000);
         }
