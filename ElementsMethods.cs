@@ -72,7 +72,7 @@ namespace PageObjectPatternDemo
 
         public void navigateDataList()
         {
-            string opinionOneToString = opinionOne.ToString();
+            string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
 
             System.Threading.Thread.Sleep(5000);
