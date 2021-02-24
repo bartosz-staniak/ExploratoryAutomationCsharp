@@ -75,7 +75,7 @@ namespace PageObjectPatternDemo
         {
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
-            webDriver.FindElement(dataList).Click(); // doesn't work and why should it?
+            webDriver.FindElement(dataList).Submit(); // doesn't work and why should it?
 
             System.Threading.Thread.Sleep(5000);
         }
