@@ -77,6 +77,7 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
             System.Threading.Thread.Sleep(5000);
             webDriver.FindElement(dataList).Submit(); // click didn't work, submit does (and now doesn't why?)
+            System.Threading.Thread.Sleep(1000);
             webDriver.FindElement(dataList).Submit(); // another one for troubleshooting purposes
         }
     }
