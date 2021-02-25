@@ -53,7 +53,7 @@ namespace PageObjectPatternDemo
         {
             Datalist dataList = new Datalist(webDriver);
 
-            System.Threading.Thread.Sleep(5000); // I know, I know
+            // System.Threading.Thread.Sleep(5000); // I know, I know
 
             Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
 
