@@ -55,7 +55,7 @@ namespace PageObjectPatternDemo
 
             System.Threading.Thread.Sleep(5000); // I know, I know
 
-            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
+            Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
 
             webDriver.Quit();
 
