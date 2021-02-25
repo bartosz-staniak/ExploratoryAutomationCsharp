@@ -53,7 +53,7 @@ namespace PageObjectPatternDemo
         {
             Datalist dataList = new Datalist(webDriver);
 
-            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
+            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // it's working
 
             webDriver.Quit();
 
