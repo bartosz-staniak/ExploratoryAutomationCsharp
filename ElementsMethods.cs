@@ -66,8 +66,6 @@ namespace PageObjectPatternDemo
             this.navigateDataList();
         }
 
-        public static By ThisPageIsText = By.XPath("/html/body/div/p[7]/text()[2]");
-
         public static By dataList = By.Id("dataList");
         public static By opinions = By.Id("opinions");
         public static By opinionOne = By.XPath("//*[@id='opinions']/option[1]");
