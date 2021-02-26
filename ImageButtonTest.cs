@@ -8,13 +8,14 @@ using System;
 namespace PageObjectPatternDemo
 {
     [TestClass]
-    public class ImmageButtonTest
+    public class ImageButtonTest
     {
         IJavaScriptExecutor buttonexec;
 
         IWebDriver webDriver;
 
-        public ImmageButtonTest()
+
+        public ImageButtonTest()
         {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("disable-infobars");
@@ -60,6 +61,15 @@ namespace PageObjectPatternDemo
 
         }
         
+    }
+
+    [TestClass]
+    public class OpinionsTests : ImageButtonTest
+    {
+        public OpinionsTests() : base()
+        {
+
+        }
     }
 
 }
