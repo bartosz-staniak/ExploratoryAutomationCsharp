@@ -87,4 +87,12 @@ namespace PageObjectPatternDemo
         }
     }
 
+    public class Datalist_ShowButton : Datalist
+    {
+        public Datalist_ShowButton(IWebDriver driver) : base(driver)
+        {
+
+        }
+    }
+
 }
