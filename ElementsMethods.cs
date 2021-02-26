@@ -79,6 +79,14 @@ namespace PageObjectPatternDemo
             Actions action = new Actions(webDriver);
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, 100).Click().Build().Perform(); // it's working, the button disappeared
         }
+
+        public void navigateDataList(By opinion)
+        {
+            string option = webDriver.FindElement(opinion).GetAttribute("value");
+            webDriver.FindElement(dataList).SendKeys(option);
+            Actions action = new Actions(webDriver);
+            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, 100).Click().Build().Perform();
+        }
     }
 
     public class Datalist_ShowButton : Datalist
