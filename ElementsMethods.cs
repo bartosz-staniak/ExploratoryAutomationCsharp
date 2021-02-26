@@ -78,13 +78,6 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
             Actions action = new Actions(webDriver);
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, 100).Click().Build().Perform(); // it's working, the button disappeared
-            
-            
-            /* System.Threading.Thread.Sleep(5000);
-            webDriver.FindElement(dataList).Submit(); // click didn't work, submit does (and now doesn't why?)
-            System.Threading.Thread.Sleep(1000);
-            webDriver.FindElement(dataList).Submit(); // another one for troubleshooting purposes
-            */
         }
     }
 
