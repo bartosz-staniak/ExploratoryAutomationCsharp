@@ -91,9 +91,9 @@ namespace PageObjectPatternDemo
 
     public class Opinions : Datalist
     {
-        public Opinions(IWebDriver driver) : base(driver)
+        public Opinions(IWebDriver driver, By opinion) : base(driver)
         {
-
+            this.navigateDataList(opinion);
         }
     }
 
