@@ -89,9 +89,9 @@ namespace PageObjectPatternDemo
         }
     }
 
-    public class Datalist_ShowButton : Datalist
+    public class Opinions : Datalist
     {
-        public Datalist_ShowButton(IWebDriver driver) : base(driver)
+        public Opinions(IWebDriver driver) : base(driver)
         {
 
         }
