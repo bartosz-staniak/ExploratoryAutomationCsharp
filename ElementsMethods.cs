@@ -63,7 +63,7 @@ namespace PageObjectPatternDemo
     {
         public Datalist(IWebDriver driver) : base(driver)
         {
-            this.navigateDataList();
+            this.navigateDataList(dataList);
         }
 
         public static By dataList = By.Id("dataList");
