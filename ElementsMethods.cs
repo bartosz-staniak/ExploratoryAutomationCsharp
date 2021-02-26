@@ -69,6 +69,7 @@ namespace PageObjectPatternDemo
         public static By dataList = By.Id("dataList");
         public static By opinions = By.Id("opinions");
         public static By opinionOne = By.XPath("//*[@id='opinions']/option[1]");
+        public static By opinionTwo = By.XPath("//*[@id='opinions']/option[2]");
         public static By hideousButton = By.XPath("/html/body/button");
 
         public void navigateDataList()
