@@ -23,6 +23,9 @@ namespace PageObjectPatternDemo
             WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(50));
         }
 
+    }
+
+
         [TestMethod]
         public void FirstTest()
         {
