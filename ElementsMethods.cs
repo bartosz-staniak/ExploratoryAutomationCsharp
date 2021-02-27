@@ -93,7 +93,7 @@ namespace PageObjectPatternDemo
     {
         public Opinions(IWebDriver driver) : base(driver)
         {
-            this.navigateDataList(opinion);
+            this.navigateDataList();
         }
     }
 
