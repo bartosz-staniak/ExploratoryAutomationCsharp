@@ -10,7 +10,7 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class ImageButtonTest
     {
-        IWebDriver webDriver;
+        public IWebDriver webDriver;
 
 
         public ImageButtonTest()
