@@ -113,7 +113,7 @@ namespace PageObjectPatternDemo
 
         }
         
-        public Opinions(IWebDriver driver, string any) : base(driver)
+        public Opinions(IWebDriver driver, string any) : base(driver, any)
         {
             navigateDataList();
         }
