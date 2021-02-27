@@ -14,6 +14,18 @@ namespace PageObjectPatternDemo
 
         }
 
+        [TestMethod]
+        public void DataListTest()
+        {
+            Datalist dataList = new Datalist(webDriver);
+
+            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // it's working
+
+            webDriver.Quit();
+
+
+        }
+
     }
 
 }
