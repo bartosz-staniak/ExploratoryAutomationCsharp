@@ -16,6 +16,16 @@ namespace PageObjectPatternDemo
         }
         */
 
+        public OpinionsTests() : base()
+        {
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.AddArgument("disable-infobars");
+            webDriver = new ChromeDriver(@"C:\ChromeDriver", chromeOptions);
+            webDriver.Navigate().GoToUrl("http://127.0.0.1:5500/index.html");
+            webDriver.Manage().Window.Maximize();
+            WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(50));
+        }
+
         [TestMethod]
         public void DataListTestTroubleshooting()  // doesn't work due to: "Object reference not set to an instance of an object."
         {
