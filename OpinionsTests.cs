@@ -16,6 +16,18 @@ namespace PageObjectPatternDemo
         }
         */
 
+        [TestMethod]
+        public void AnotherAttempt()
+        {
+            InitialPage initialPage = new InitialPage(webDriver);
+
+
+            string buttonImageText = webDriver.FindElement(InitialPage.buttonImage).Text;
+            Assert.AreEqual("Show this image", buttonImageText);
+
+
+            webDriver.Quit();
+        }
     }
 
 }
