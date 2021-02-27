@@ -17,7 +17,6 @@ namespace PageObjectPatternDemo
 
         public ImageButtonTest()
         {
-            IWebDriver webDriver;
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("disable-infobars");
             webDriver = new ChromeDriver(@"C:\ChromeDriver", chromeOptions);
