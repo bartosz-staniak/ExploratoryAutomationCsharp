@@ -21,9 +21,6 @@ namespace PageObjectPatternDemo
         {
             webDriver = driver; // there was "this."webDriver
             this.hideImage();
-
-            System.Threading.Thread.Sleep(5000);
-
             this.WaitTenSec();
         }
 
@@ -32,9 +29,6 @@ namespace PageObjectPatternDemo
         public void hideImage()
         {
             webDriver.FindElement(InitialPage.buttonImage).Click();
-
-            System.Threading.Thread.Sleep(5000);
-
             WaitTenSec();
         }
 
