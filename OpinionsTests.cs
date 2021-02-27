@@ -19,6 +19,7 @@ namespace PageObjectPatternDemo
         }
         */
 
+        /*
         public OpinionsTests() : base()
         {
             ChromeOptions chromeOptions = new ChromeOptions();
@@ -28,6 +29,7 @@ namespace PageObjectPatternDemo
             webDriver.Manage().Window.Maximize();
             WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(50));
         }
+        */
 
         [TestMethod]
         public void DataListTestTroubleshooting()  // doesn't work due to: "Object reference not set to an instance of an object."
