@@ -25,6 +25,9 @@ namespace PageObjectPatternDemo
 
     }
 
+    [TestClass]
+    public class ImageButtonTest : Configuration
+    {
 
         [TestMethod]
         public void FirstTest()
