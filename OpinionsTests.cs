@@ -8,11 +8,13 @@ namespace PageObjectPatternDemo
     public class OpinionsTests : Configuration
     {
         /*
-        public OpinionsTests() : base()
+        public OpinionsTests() : base() // works without this constructor if no other is used
         {
             // this is sufficient for using all inherited test methods without changes
         }
         */
+
+
 
         [TestMethod]
         public void AnotherAttempt()
