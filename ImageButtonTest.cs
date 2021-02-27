@@ -10,8 +10,6 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class ImageButtonTest
     {
-        IJavaScriptExecutor buttonexec;
-
         IWebDriver webDriver;
 
 
