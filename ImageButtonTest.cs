@@ -17,6 +17,7 @@ namespace PageObjectPatternDemo
 
         public ImageButtonTest()
         {
+            IWebDriver webDriver;
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("disable-infobars");
             webDriver = new ChromeDriver(@"C:\ChromeDriver", chromeOptions);
@@ -66,6 +67,8 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class OpinionsTests : ImageButtonTest
     {
+        IWebDriver webDriver; // trying to find out if this solves the inaccessibility due to protection level issue
+
         public OpinionsTests() : base()
         {
 
