@@ -17,7 +17,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void AnotherAttempt()
         {
-            Opinions opionstest = new Opinions(webDriver); // this is not going to work, elements are not yet present
+            Opinions opionstest = new Opinions(webDriver);
 
 
             string buttonImageText = webDriver.FindElement(InitialPage.buttonImage).Text;
