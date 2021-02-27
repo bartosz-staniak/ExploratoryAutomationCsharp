@@ -102,6 +102,8 @@ namespace PageObjectPatternDemo
             {
                 this.navigateDataList(opinionOne);
             }
+            else
+                this.navigateDataList(opinionTwo);
 
             
         }
