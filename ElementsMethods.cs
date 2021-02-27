@@ -72,6 +72,12 @@ namespace PageObjectPatternDemo
 
     public class Datalist : InitialPage
     {
+        public Datalist(IWebDriver driver) : base (driver)
+        {
+
+        }
+
+        
         public Datalist(IWebDriver driver) : base(driver)
         {
             this.navigateDataList();
