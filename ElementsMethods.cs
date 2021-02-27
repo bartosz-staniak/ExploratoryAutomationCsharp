@@ -95,6 +95,11 @@ namespace PageObjectPatternDemo
         {
             this.navigateDataList();
         }
+
+        public Opinions(IWebDriver driver, int option) : base(driver)
+        {
+            this.navigateDataList();
+        }
     }
 
 }
