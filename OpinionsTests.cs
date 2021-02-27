@@ -15,19 +15,6 @@ namespace PageObjectPatternDemo
         */
 
         [TestMethod]
-        public void AnotherAttempt()
-        {
-            Opinions opionstest = new Opinions(webDriver);
-
-
-            string buttonImageText = webDriver.FindElement(InitialPage.buttonImage).Text;
-            Assert.AreEqual("Show this image", buttonImageText);
-
-
-            webDriver.Quit();
-        }
-
-        [TestMethod]
         public void TestingTheNewOpinoinsConstructor()
         {
             Opinions multipleOpinionsTest = new Opinions(webDriver, 2);
