@@ -25,7 +25,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void SecondTest()
         {
-            InitialPageII initialPageII = new InitialPageII(webDriver);
+            InitialPageII initialPageII = new InitialPageII(webDriver, test);
 
             string buttonDivText = webDriver.FindElement(InitialPageII.button1).Text;
             Assert.AreEqual("Oh well, bring it back", buttonDivText);
