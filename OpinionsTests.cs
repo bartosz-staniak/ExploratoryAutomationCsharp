@@ -15,6 +15,12 @@ namespace PageObjectPatternDemo
         */
 
         [TestMethod]
+        public void troubleshootingTest()
+        {
+            Opinions basicTest = new Opinions(webDriver);
+        }
+
+        [TestMethod]
         public void TestingTheNewOpinoinsConstructor()
         {
             Opinions multipleOpinionsTest = new Opinions(webDriver, 2);
