@@ -108,7 +108,7 @@ namespace PageObjectPatternDemo
 
     public class Opinions : Datalist
     {
-        public Opinions(IWebDriver webDriver) : base(driver)
+        public Opinions(IWebDriver driver) : base(driver)
         {
 
         }
