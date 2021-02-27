@@ -9,10 +9,12 @@ namespace PageObjectPatternDemo
     {
         IWebDriver webDriver; // trying to find out if this solves the inaccessibility due to protection level issue
 
+        /*
         public OpinionsTests() : base()
         {
             // this is sufficient for using all inherited test methods without changes
         }
+        */
 
         [TestMethod]
         public void DataListTestTroubleshooting()  // doesn't work due to: "Object reference not set to an instance of an object."
