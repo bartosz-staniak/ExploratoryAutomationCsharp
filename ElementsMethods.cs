@@ -20,7 +20,7 @@ namespace PageObjectPatternDemo
         public InitialPage(IWebDriver driver)
         {
             webDriver = driver; // there was "this."webDriver
-            hideImage(); // removed "this." to find out if it solves a null pointer issue in another class
+            this.hideImage();
             this.WaitTenSec();
         }
 
