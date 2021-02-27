@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 namespace PageObjectPatternDemo
 {
     [TestClass]
-    public class OpinionsTests : ImageButtonTest
+    public class OpinionsTests : Configuration
     {
         /*
         public OpinionsTests() : base()
