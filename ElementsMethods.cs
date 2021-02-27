@@ -98,7 +98,12 @@ namespace PageObjectPatternDemo
 
         public Opinions(IWebDriver driver, int option) : base(driver)
         {
-            this.navigateDataList();
+            if (option == 1)
+            {
+                this.navigateDataList(opinionOne);
+            }
+
+            
         }
     }
 
