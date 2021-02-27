@@ -74,18 +74,6 @@ namespace PageObjectPatternDemo
 
         }
 
-        [TestMethod]
-        public void DataListTest()
-        {
-            Datalist dataList = new Datalist(webDriver); // webDriver icaccessible due to its protection level
-
-            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // webDriver icaccessible due to its protection level
-
-            webDriver.Quit(); // webDriver icaccessible due to its protection level
-
-
-        }
-
     }
 
 }
