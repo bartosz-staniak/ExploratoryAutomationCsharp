@@ -7,7 +7,7 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class ImageButtonTest : Configuration
     {
-        string test = ("test");
+        // string test = ("test");
 
         [TestMethod]
         public void FirstTest()
