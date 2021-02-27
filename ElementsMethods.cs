@@ -23,7 +23,7 @@ namespace PageObjectPatternDemo
 
         }
         
-        public InitialPage(IWebDriver driver)
+        public InitialPage(IWebDriver driver, string any)
         {
             webDriver = driver; // there was "this."webDriver
             this.hideImage();
