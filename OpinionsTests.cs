@@ -15,7 +15,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void DataListTestOverwrite()  // doesn't work due to: "Object reference not set to an instance of an object."
+        public void DataListTestTroubleshooting()  // doesn't work due to: "Object reference not set to an instance of an object."
         {
             Datalist dataList = new Datalist(webDriver);
 
