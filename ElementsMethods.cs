@@ -51,6 +51,11 @@ namespace PageObjectPatternDemo
     {
         public InitialPageII(IWebDriver driver) : base(driver)
         {
+
+        }
+        
+        public InitialPageII(IWebDriver driver, string any) : base(driver)
+        {
             this.hideMainDiv();
             this.WaitTenSec();
         }
