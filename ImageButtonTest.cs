@@ -7,11 +7,12 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class ImageButtonTest : Configuration
     {
+        string test = ("test");
 
         [TestMethod]
         public void FirstTest()
         {
-            InitialPage initialPage = new InitialPage(webDriver);
+            InitialPage initialPage = new InitialPage(webDriver, test);
 
 
             string buttonImageText = webDriver.FindElement(InitialPage.buttonImage).Text;
