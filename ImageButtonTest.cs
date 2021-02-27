@@ -64,6 +64,7 @@ namespace PageObjectPatternDemo
         
     }
 
+    /*
     [TestClass]
     public class OpinionsTests : ImageButtonTest
     {
@@ -86,6 +87,6 @@ namespace PageObjectPatternDemo
 
         }
 
-    }
+    } */
 
 }
