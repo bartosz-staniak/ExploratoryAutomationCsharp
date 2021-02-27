@@ -17,7 +17,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void DataListTestTroubleshooting()  // doesn't work due to: "Object reference not set to an instance of an object."
         {
-            Datalist dataList = new Datalist(webDriver);
+            Datalist dataListTroubleshooting = new Datalist(webDriver);
 
             Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // it's working
 
