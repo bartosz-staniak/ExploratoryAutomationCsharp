@@ -8,12 +8,12 @@ using System;
 namespace PageObjectPatternDemo
 {
     [TestClass]
-    public class ImageButtonTest
+    public class Configuration
     {
         public IWebDriver webDriver;
 
 
-        public ImageButtonTest()
+        public Configuration()
         {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("disable-infobars");
