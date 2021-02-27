@@ -11,7 +11,7 @@ namespace PageObjectPatternDemo
 
         public OpinionsTests() : base()
         {
-
+            // this is sufficient for using all inherited test methods without changes
         }
 
         [TestMethod]
