@@ -16,7 +16,7 @@ namespace PageObjectPatternDemo
 
     public class InitialPage
     {
-        public static IWebDriver webDriver; // there wasn't "public"
+        public IWebDriver webDriver; // there wasn't "public"
         public InitialPage(IWebDriver driver)
         {
             webDriver = driver; // there was "this."webDriver
