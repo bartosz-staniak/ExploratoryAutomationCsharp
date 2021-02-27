@@ -14,8 +14,6 @@ namespace PageObjectPatternDemo
         }
         */
 
-
-
         [TestMethod]
         public void AnotherAttempt()
         {
@@ -27,6 +25,11 @@ namespace PageObjectPatternDemo
 
 
             webDriver.Quit();
+        }
+
+        public void TestingTheNewOpinoinsConstructor()
+        {
+            Opinions multipleOpinionsTest = new Opinions(webDriver, 1);
         }
     }
 
