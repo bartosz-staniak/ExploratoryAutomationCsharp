@@ -127,8 +127,11 @@ namespace PageObjectPatternDemo
             else if (option == 3) {
                 this.navigateDataList(opinionThree);
             }
-            else
+            else if (option == 2)
+            {
                 this.navigateDataList(opinionTwo);
+            }
+                
         }
 
         public static By opinionThree = By.XPath("//*[@id='opinions']/option[3]");
