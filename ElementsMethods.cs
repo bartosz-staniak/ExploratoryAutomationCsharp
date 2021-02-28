@@ -132,6 +132,16 @@ namespace PageObjectPatternDemo
         }
 
         public static By opinionThree = By.XPath("//*[@id='opinions']/option[3]");
+        public static By opinionFour = By.XPath("//*[@id='opinions']/option[4]");
+        public static By opinionFive = By.XPath("//*[@id='opinions']/option[5]");
+        public static By opinionSix = By.XPath("//*[@id='opinions']/option[6]");
+        public static By opinionSeven = By.XPath("//*[@id='opinions']/option[7]");
+        public static By opinionEight = By.XPath("//*[@id='opinions']/option[8]");
+        public static By opinionNine = By.XPath("//*[@id='opinions']/option[9]");
+        public static By opinionTen = By.XPath("//*[@id='opinions']/option[10]");
+        public static By opinionEleven = By.XPath("//*[@id='opinions']/option[11]");
+        public static By opinionTwelve = By.XPath("//*[@id='opinions']/option[12]");
+        public static By opinionThirteen = By.XPath("//*[@id='opinions']/option[13]");
     }
 
 }
