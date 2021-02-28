@@ -124,6 +124,9 @@ namespace PageObjectPatternDemo
             {
                 this.navigateDataList(opinionOne);
             }
+            else if (option == 3) {
+                this.navigateDataList(opinionThree);
+            }
             else
                 this.navigateDataList(opinionTwo);
 
