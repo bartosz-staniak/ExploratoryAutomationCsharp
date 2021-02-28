@@ -118,7 +118,7 @@ namespace PageObjectPatternDemo
             navigateDataList();
         }
 
-        public Opinions(IWebDriver driver, int option) : base(driver)
+        public Opinions(IWebDriver driver, int option, string any) : base(driver)
         {
             if (option == 1)
             {
