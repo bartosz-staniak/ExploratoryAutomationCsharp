@@ -17,7 +17,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void troubleshootingTest()
         {
-            Opinions basicTest = new Opinions(webDriver);
+            Opinions basicTest = new Opinions(webDriver, test);
         }
 
         [TestMethod]
