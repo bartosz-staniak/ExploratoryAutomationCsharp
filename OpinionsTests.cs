@@ -23,6 +23,16 @@ namespace PageObjectPatternDemo
 
             webDriver.Quit();
         }
+
+        [TestMethod]
+        public void TestingTheNewOpinoinsConstructor13()
+        {
+            Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test);
+
+            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
+
+            webDriver.Quit();
+        }
     }
 
 }
