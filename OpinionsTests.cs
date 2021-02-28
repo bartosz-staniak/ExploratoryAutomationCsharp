@@ -23,7 +23,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void TestingTheNewOpinoinsConstructor()
         {
-            Opinions multipleOpinionsTest = new Opinions(webDriver, 2, test);
+            Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test);
         }
     }
 
