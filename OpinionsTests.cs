@@ -24,6 +24,8 @@ namespace PageObjectPatternDemo
         public void TestingTheNewOpinoinsConstructor()
         {
             Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test);
+
+            webDriver.Quit();
         }
     }
 
