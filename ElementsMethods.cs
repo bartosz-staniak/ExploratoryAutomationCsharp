@@ -20,7 +20,7 @@ namespace PageObjectPatternDemo
         
         public InitialPage(IWebDriver driver)
         {
-
+            webDriver = driver;
         }
         
         public InitialPage(IWebDriver driver, string any)
