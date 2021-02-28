@@ -27,7 +27,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void TestingTheNewOpinoinsConstructor13()
         {
-            Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test);
+            Opinions multipleOpinionsTest = new Opinions(webDriver, 13, test);
 
             Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
 
