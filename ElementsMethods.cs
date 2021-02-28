@@ -131,4 +131,17 @@ namespace PageObjectPatternDemo
         }
     }
 
+    public class TroubleshootingOpinions : Opinions
+    {
+        public TroubleshootingOpinions(IWebDriver driver, int option) : base(driver)
+        {
+            if (option == 1)
+            {
+                this.navigateDataList(opinionOne);
+            }
+            else
+                this.navigateDataList(opinionTwo);
+        }
+    }
+
 }
