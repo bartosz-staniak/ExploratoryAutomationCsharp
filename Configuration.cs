@@ -23,6 +23,8 @@ namespace PageObjectPatternDemo
             WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(50));
         }
 
+        public string test = ("test");
+
     }
 
 }
