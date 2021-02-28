@@ -25,6 +25,12 @@ namespace PageObjectPatternDemo
         {
             Opinions multipleOpinionsTest = new Opinions(webDriver, 2, test);
         }
+
+        [TestMethod]
+        public void troubleshootingOpinionsTestMethod()
+        {
+            TroubleshootingOpinions troubleshootingOpinions = new TroubleshootingOpinions(webDriver, 1);
+        }
     }
 
 }
