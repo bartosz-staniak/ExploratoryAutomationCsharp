@@ -129,9 +129,9 @@ namespace PageObjectPatternDemo
             }
             else
                 this.navigateDataList(opinionTwo);
-
-            
         }
+
+        public static By opinionThree = By.XPath("//*[@id='opinions']/option[3]");
     }
 
 }
