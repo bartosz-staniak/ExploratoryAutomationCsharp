@@ -23,10 +23,7 @@ namespace PageObjectPatternDemo
             } finally {
                 webDriver.Quit();
             }
-            
 
-
-            webDriver.Quit();
         }
 
         [TestMethod]
@@ -42,9 +39,7 @@ namespace PageObjectPatternDemo
             } finally {
                 webDriver.Quit();
             }
-            
 
-            
         }
 
         [TestMethod]
