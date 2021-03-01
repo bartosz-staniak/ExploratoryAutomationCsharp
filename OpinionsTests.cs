@@ -32,11 +32,16 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void TestingTheNewOpinoinsConstructor13()
         {
-            Opinions multipleOpinionsTest = new Opinions(webDriver, 13, test);
+            try
+            {
+                Opinions multipleOpinionsTest = new Opinions(webDriver, 13, test);
 
-            Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
-
-            webDriver.Quit();
+                Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
+            } finally
+            {
+                webDriver.Quit();
+            }
+            
         }
     }
 
