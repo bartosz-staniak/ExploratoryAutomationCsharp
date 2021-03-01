@@ -19,7 +19,7 @@ namespace PageObjectPatternDemo
         {
             Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test);
 
-            Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
+            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
 
             webDriver.Quit();
         }
@@ -29,7 +29,7 @@ namespace PageObjectPatternDemo
         {
             Opinions multipleOpinionsTest = new Opinions(webDriver, 13, test);
 
-            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
+            Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
 
             webDriver.Quit();
         }
