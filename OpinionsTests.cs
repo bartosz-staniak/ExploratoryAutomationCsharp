@@ -35,7 +35,7 @@ namespace PageObjectPatternDemo
 
                 using (StreamWriter sw = File.AppendText("report.txt"))
                 {
-                    sw.Write(resultInWords);
+                    sw.Write(Environment.NewLine + resultInWords);
                 }
 
                 // Reporting to a file ends here
@@ -64,7 +64,7 @@ namespace PageObjectPatternDemo
                 
                 using (StreamWriter sw = File.AppendText("report.txt"))
                 {
-                    sw.Write(resultInWords);
+                    sw.Write(Environment.NewLine + resultInWords);
                 }
 
                 // Reporting to a file ends here
