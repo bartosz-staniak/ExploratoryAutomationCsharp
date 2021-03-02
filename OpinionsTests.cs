@@ -1,6 +1,7 @@
 ﻿// using MbUnit.Framework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using System;
 
 namespace PageObjectPatternDemo
 {
@@ -37,7 +38,10 @@ namespace PageObjectPatternDemo
                 Opinions multipleOpinionsTest = new Opinions(webDriver, 13, test);
 
                 Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
+                
                 bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
+                string resultInWords = $"The hiedeous button is displayed: {result}";
+                System.Console.WriteLine(resultInWords);
 
             } finally
             {
