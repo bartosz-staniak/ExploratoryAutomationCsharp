@@ -166,6 +166,8 @@ namespace PageObjectPatternDemo
         {
 
         }
+
+        public static By textArea = By.Id("reportHere");
     }
         
 
