@@ -45,7 +45,7 @@ namespace PageObjectPatternDemo
                 // Reporting to a file starts here
 
                 bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
-                string resultInWords = $"The hiedeous button is displayed: {result}";
+                string resultInWords = $"The hiedeous button is displayed for option 13: {result}";
                 System.Console.WriteLine(resultInWords);
                 
                 using (StreamWriter sw = File.AppendText("report.txt"))
