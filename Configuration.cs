@@ -12,6 +12,7 @@ namespace PageObjectPatternDemo
     public class Configuration
     {
         public IWebDriver webDriver;
+        bool created = false;
 
 
         public Configuration()
@@ -22,6 +23,7 @@ namespace PageObjectPatternDemo
             webDriver.Navigate().GoToUrl("http://127.0.0.1:5500/index.html");
             webDriver.Manage().Window.Maximize();
             WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(50));
+            createReportFile(); // part of the attempt to create the report file for the global use
         }
 
         public string test = ("test");
@@ -30,7 +32,13 @@ namespace PageObjectPatternDemo
         // an attempt to create a file gloabally
         public void createReportFile()
         {
-            using (var fileStream = File.Create("report.txt")) ;
+            if (created == false)
+            {
+                using (var fileStream = File.Create("report.txt")) ;
+                created = true;
+            }
+
+
         }
 
     }
