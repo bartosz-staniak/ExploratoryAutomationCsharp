@@ -150,4 +150,24 @@ namespace PageObjectPatternDemo
 
     }
 
+    public class Reporting : Opinions
+    {
+        public Reporting(IWebDriver driver) : base(driver)
+        {
+
+        }
+
+        public Reporting(IWebDriver driver, string any) : base(driver, any)
+        {
+
+        }
+
+        public Reporting(IWebDriver driver, int option, string any) : base(driver)
+        {
+
+        }
+    }
+        
+
+
 }
