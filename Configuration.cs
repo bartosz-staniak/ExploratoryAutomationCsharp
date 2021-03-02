@@ -12,7 +12,6 @@ namespace PageObjectPatternDemo
     public class Configuration
     {
         public IWebDriver webDriver;
-        bool created = false;
 
 
         public Configuration()
@@ -32,12 +31,8 @@ namespace PageObjectPatternDemo
         // an attempt to create a file gloabally
         public void createReportFile()
         {
-            if (created == false)
-            {
-                using (var fileStream = File.Create("report.txt")) ;
-                created = true;
-            }
 
+                using (var fileStream = File.Create("report.txt")) ;
 
         }
 
