@@ -27,7 +27,21 @@ namespace PageObjectPatternDemo
 
                 Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
 
-            } finally {
+                // Reporting to a file starts here
+
+                bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
+                string resultInWords = $"The hiedeous button is displayed for option 3: {result}";
+                System.Console.WriteLine(resultInWords);
+
+                using (StreamWriter sw = File.AppendText("report.txt"))
+                {
+                    sw.Write(resultInWords);
+                }
+
+                // Reporting to a file ends here
+
+            }
+            finally {
                 webDriver.Quit();
             }
             
