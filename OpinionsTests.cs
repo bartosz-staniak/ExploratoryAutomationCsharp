@@ -48,10 +48,9 @@ namespace PageObjectPatternDemo
                 string resultInWords = $"The hiedeous button is displayed: {result}";
                 System.Console.WriteLine(resultInWords);
                 
-                using (var fileStream = File.Create("report.txt"))
+                using (StreamWriter sw = File.AppendText("report.txt"))
                 {
-                    var Bytes = new UTF8Encoding(true).GetBytes(resultInWords);
-                    fileStream.Write(Bytes, 0, Bytes.Length);
+                    sw.Write(resultInWords);
                 }
 
                 // Reporting to a file ends here
