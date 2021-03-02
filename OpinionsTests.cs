@@ -37,6 +37,8 @@ namespace PageObjectPatternDemo
                 Opinions multipleOpinionsTest = new Opinions(webDriver, 13, test);
 
                 Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
+                bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
+
             } finally
             {
                 webDriver.Quit();
