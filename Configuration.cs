@@ -33,7 +33,7 @@ namespace PageObjectPatternDemo
         {
             if (!File.Exists("report.txt"))
             {
-                using (var fileStream = File.Create("report.txt")) ;
+                using var fileStream = File.Create("report.txt");
             }
             
 
