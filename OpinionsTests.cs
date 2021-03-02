@@ -30,7 +30,7 @@ namespace PageObjectPatternDemo
                 // Reporting to a file starts here
 
                 bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
-                string resultInWords = $"The hiedeous button is displayed for option 3: {result}";
+                string resultInWords = $"For option 3 the button is displayed. Expected: False, Actual: {result}";
                 System.Console.WriteLine(resultInWords);
 
                 using (StreamWriter sw = File.AppendText("report.txt"))
@@ -59,7 +59,7 @@ namespace PageObjectPatternDemo
                 // Reporting to a file starts here
 
                 bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
-                string resultInWords = $"The hiedeous button is displayed for option 13: {result}";
+                string resultInWords = $"For Option 13 the button is displayed. Expected: True, Actual: {result}";
                 System.Console.WriteLine(resultInWords);
                 
                 using (StreamWriter sw = File.AppendText("report.txt"))
