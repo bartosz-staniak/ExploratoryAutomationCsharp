@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using System;
+using System.IO;
+using System.Text;
 
 namespace PageObjectPatternDemo
 {
@@ -44,6 +46,12 @@ namespace PageObjectPatternDemo
                 bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
                 string resultInWords = $"The hiedeous button is displayed: {result}";
                 System.Console.WriteLine(resultInWords);
+
+                using (var fileStream = File.Create("report.txt"))
+                {
+                    var Bytes = new UTF8Encoding(true).GetBytes(resultInWords);
+                    fileStream.Write(Bytes, 0, Bytes.Length);
+                }
 
                 // Reporting to a file ends here
 
