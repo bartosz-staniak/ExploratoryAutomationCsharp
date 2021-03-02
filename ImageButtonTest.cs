@@ -17,7 +17,6 @@ namespace PageObjectPatternDemo
             {
                 InitialPage initialPage = new InitialPage(webDriver, test);
 
-
                 string buttonImageText = webDriver.FindElement(InitialPage.buttonImage).Text;
                 Assert.AreEqual("Show this image", buttonImageText);
             } finally {
