@@ -39,9 +39,13 @@ namespace PageObjectPatternDemo
 
                 Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
                 
+                // Reporting to a file starts here
+
                 bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
                 string resultInWords = $"The hiedeous button is displayed: {result}";
                 System.Console.WriteLine(resultInWords);
+
+                // Reporting to a file ends here
 
             } finally
             {
