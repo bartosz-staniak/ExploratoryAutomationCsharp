@@ -31,8 +31,11 @@ namespace PageObjectPatternDemo
         // an attempt to create a file gloabally
         public void createReportFile()
         {
-
+            if (!File.Exists("report.txt"))
+            {
                 using (var fileStream = File.Create("report.txt")) ;
+            }
+            
 
         }
 
