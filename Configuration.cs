@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.IO;
 
 namespace PageObjectPatternDemo
 {
@@ -24,6 +25,13 @@ namespace PageObjectPatternDemo
         }
 
         public string test = ("test");
+
+
+        // an attempt to create a file gloabally
+        public void createReportFile()
+        {
+            using (var fileStream = File.Create("report.txt")) ;
+        }
 
     }
 
