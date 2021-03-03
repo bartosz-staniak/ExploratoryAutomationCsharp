@@ -147,9 +147,12 @@ namespace PageObjectPatternDemo
                 
         }
 
-        public static void letMeSeeIfThisUglyIdeaWorks(IWebDriver driver)
+        public static String letMeSeeIfThisUglyIdeaWorks(IWebDriver driver)
         {
             string test = "test";
+            string resultInWords = "";
+            string didItReallyWorkQuestionMarkX3 = "";
+            string returnThis = "";
 
             try
             {
@@ -160,8 +163,8 @@ namespace PageObjectPatternDemo
                 // Reporting to a file starts here
 
                 bool result = driver.FindElement(Datalist.hideousButton).Displayed;
-                string resultInWords = $"For option 3 the button is displayed. Expected: False, Actual: {result}";
-                string didItReallyWorkQuestionMarkX3 = "Did it really work?";
+                resultInWords = $"For option 3 the button is displayed. Expected: False, Actual: {result}";
+                didItReallyWorkQuestionMarkX3 = "Did it really work?";
                 System.Console.WriteLine(resultInWords);
 
                 using (StreamWriter sw = File.AppendText("report.txt"))
@@ -177,6 +180,10 @@ namespace PageObjectPatternDemo
             {
                 driver.Quit();
             }
+
+            returnThis = resultInWords + didItReallyWorkQuestionMarkX3;
+            return returnThis;
+
         }
 
     }
