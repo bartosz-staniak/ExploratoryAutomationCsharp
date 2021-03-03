@@ -192,7 +192,7 @@ namespace PageObjectPatternDemo
     {
         public Reporting(IWebDriver driver) : base(driver)
         {
-
+            anotherIdeaOfMine(driver);
         }
 
         public Reporting(IWebDriver driver, string any) : base(driver, any)
