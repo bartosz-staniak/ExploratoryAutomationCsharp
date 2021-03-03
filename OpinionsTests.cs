@@ -85,7 +85,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                TestingTheNewOpinoinsConstructor13();
+                TestingTheNewOpinoinsConstructor13(); // this one is failing, most probably due to driver.Quit() method
 
                 Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
             } finally {
