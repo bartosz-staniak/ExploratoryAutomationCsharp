@@ -147,7 +147,7 @@ namespace PageObjectPatternDemo
                 
         }
 
-        public static String letMeSeeIfThisUglyIdeaWorks(IWebDriver driver)
+        public static String letMeSeeIfThisUglyIdeaWorks(IWebDriver driver, bool disableQuit)
         {
             string test = "test";
             string resultInWords = "";
@@ -178,6 +178,7 @@ namespace PageObjectPatternDemo
             }
             finally
             {
+                if (disableQuit == false)
                 driver.Quit();
             }
 
