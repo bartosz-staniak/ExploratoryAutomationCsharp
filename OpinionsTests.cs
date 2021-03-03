@@ -83,7 +83,13 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void TestingPresenceOfTextarea()
         {
-            Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
+            try
+            {
+                Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
+            } finally {
+                webDriver.Quit();
+            }
+            
         }
     }
 
