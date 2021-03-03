@@ -19,7 +19,7 @@ namespace PageObjectPatternDemo
 
 
         [TestMethod]
-        private void TestingTheNewOpinoinsConstructor()
+        public void TestingTheNewOpinoinsConstructor()
         {
             try
             {
