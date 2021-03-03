@@ -46,9 +46,9 @@ namespace PageObjectPatternDemo
             }
             
         }
-
+        
         [TestMethod]
-        public void TestingTheNewOpinoinsConstructor13(bool quit = true)
+        public void TestingTheNewOpinoinsConstructor13()
         {
             try
             {
@@ -71,7 +71,6 @@ namespace PageObjectPatternDemo
 
             } finally
             {
-                if (quit == true)
                 webDriver.Quit();
             }
             
