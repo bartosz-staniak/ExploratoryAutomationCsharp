@@ -97,6 +97,7 @@ namespace PageObjectPatternDemo
                 Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
 
             } finally {
+                System.Threading.Thread.Sleep(5000);
                 webDriver.Quit();
             }
             
