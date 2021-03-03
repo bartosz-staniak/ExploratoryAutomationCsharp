@@ -46,6 +46,12 @@ namespace PageObjectPatternDemo
             }
             
         }
+
+        [TestMethod]
+        public void AnUglyIdeaInTest()
+        {
+            
+        }
         
         [TestMethod]
         public void TestingTheNewOpinoinsConstructor13()
