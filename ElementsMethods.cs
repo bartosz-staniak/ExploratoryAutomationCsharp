@@ -103,9 +103,7 @@ namespace PageObjectPatternDemo
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
             Actions action = new Actions(webDriver);
-            System.Threading.Thread.Sleep(5000);
-            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).ContextClick().Click().Build().Perform(); // it's working, the button disappeared
-            System.Threading.Thread.Sleep(5000);
+            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
         }
 
         public void navigateDataList(By opinion)
