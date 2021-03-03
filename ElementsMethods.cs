@@ -14,7 +14,7 @@ namespace PageObjectPatternDemo
 
     public class InitialPage
     {
-        public IWebDriver webDriver; // there wasn't "public"
+        public static IWebDriver webDriver; // there wasn't "public"
         
         public InitialPage(IWebDriver driver)
         {
@@ -147,7 +147,7 @@ namespace PageObjectPatternDemo
                 
         }
 
-        public void letMeSeeIfThisUglyIdeaWorks()
+        public static void letMeSeeIfThisUglyIdeaWorks()
         {
             string test = "test";
 
