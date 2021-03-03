@@ -94,8 +94,8 @@ namespace PageObjectPatternDemo
                 // TestingTheNewOpinoinsConstructor13(); // this one is failing, most probably due to driver.Quit() method
 
                 // Reporting reporting = new Reporting(webDriver);
-                Assert.IsFalse(webDriver.FindElement(Reporting.textArea).Displayed);
-                // Assert.IsNotNull(webDriver.FindElement(Reporting.textArea).Text);
+                Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
+                // Assert.IsNotNull(webDriver.FindElement(Reporting.textArea).Text); // Doesn't work as I thought it would
 
             } finally {
                 System.Threading.Thread.Sleep(5000);
