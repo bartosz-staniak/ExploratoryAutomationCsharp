@@ -207,9 +207,9 @@ namespace PageObjectPatternDemo
 
         public static By textArea = By.Id("reportHere");
 
-        public void anotherIdeaOfMine(IWebDriver driver)
+        public void anotherIdeaOfMine(IWebDriver drive)
         {
-            String report = letMeSeeIfThisUglyIdeaWorks(driver);
+            String report = letMeSeeIfThisUglyIdeaWorks(drive);
             webDriver.FindElement(textArea).SendKeys(report);
         }
     }
