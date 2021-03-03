@@ -50,7 +50,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void AnUglyIdeaInTest()
         {
-            
+            PageObjectPatternDemo.Opinions.letMeSeeIfThisUglyIdeaWorks();
         }
         
         [TestMethod]
