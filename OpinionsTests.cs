@@ -95,7 +95,8 @@ namespace PageObjectPatternDemo
 
                 // Reporting reporting = new Reporting(webDriver);
                 Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
-                // Assert.IsNotNull(webDriver.FindElement(Reporting.textArea).Text); // Doesn't work as I thought it would
+                string nullOrNotNull = "";
+                Assert.IsNotNull(nullOrNotNull = webDriver.FindElement(Reporting.textArea).GetCssValue("value")); // Doesn't work as I thought it would
 
             } finally {
                 System.Threading.Thread.Sleep(5000);
