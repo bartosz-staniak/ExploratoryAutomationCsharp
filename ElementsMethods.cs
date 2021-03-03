@@ -114,35 +114,6 @@ namespace PageObjectPatternDemo
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, 100).Click().Build().Perform();
         }
 
-        public void letMeSeeIfThisUglyIdeaWorks ()
-        {
-            string test = "test";
-
-            try
-            {
-                Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test) ;
-
-                Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
-
-                // Reporting to a file starts here
-
-                bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
-                string resultInWords = $"For option 3 the button is displayed. Expected: False, Actual: {result}";
-                System.Console.WriteLine(resultInWords);
-
-                using (StreamWriter sw = File.AppendText("report.txt"))
-                {
-                    sw.Write(Environment.NewLine + resultInWords);
-                }
-
-                // Reporting to a file ends here
-
-            }
-            finally
-            {
-                webDriver.Quit();
-            }
-        }
     }
 
     public class Opinions : Datalist
@@ -174,6 +145,36 @@ namespace PageObjectPatternDemo
             else
                 this.navigateDataList(opinionThirteen);
                 
+        }
+
+        public void letMeSeeIfThisUglyIdeaWorks()
+        {
+            string test = "test";
+
+            try
+            {
+                Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test);
+
+                Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
+
+                // Reporting to a file starts here
+
+                bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
+                string resultInWords = $"For option 3 the button is displayed. Expected: False, Actual: {result}";
+                System.Console.WriteLine(resultInWords);
+
+                using (StreamWriter sw = File.AppendText("report.txt"))
+                {
+                    sw.Write(Environment.NewLine + resultInWords);
+                }
+
+                // Reporting to a file ends here
+
+            }
+            finally
+            {
+                webDriver.Quit();
+            }
         }
 
     }
