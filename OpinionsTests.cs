@@ -93,10 +93,11 @@ namespace PageObjectPatternDemo
             {
                 // TestingTheNewOpinoinsConstructor13(); // this one is failing, most probably due to driver.Quit() method
 
-                // Reporting reporting = new Reporting(webDriver);
-                Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
-                string nullOrNotNull = "";
-                Assert.IsNotNull(nullOrNotNull = webDriver.FindElement(Reporting.textArea).GetCssValue("value")); // Doesn't work as I thought it would
+                Reporting reporting = new Reporting(webDriver);
+                // Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
+                string nullOrNotNull = null;
+                nullOrNotNull = webDriver.FindElement(Reporting.textArea).GetCssValue("value");
+                Assert.AreEqual("", nullOrNotNull); // Doesn't work as I thought it would
 
             } finally {
                 System.Threading.Thread.Sleep(5000);
