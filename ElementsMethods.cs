@@ -104,7 +104,7 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
             Actions action = new Actions(webDriver);
             System.Threading.Thread.Sleep(5000);
-            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, 50).ContextClick().Click().Build().Perform(); // it's working, the button disappeared
+            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).ContextClick().Click().Build().Perform(); // it's working, the button disappeared
             System.Threading.Thread.Sleep(5000);
         }
 
