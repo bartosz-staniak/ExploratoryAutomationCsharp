@@ -95,6 +95,7 @@ namespace PageObjectPatternDemo
 
                 Reporting reporting = new Reporting(webDriver);
                 Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
+                Assert.IsNotNull(webDriver.FindElement(Reporting.textArea).Text);
 
             } finally {
                 System.Threading.Thread.Sleep(5000);
