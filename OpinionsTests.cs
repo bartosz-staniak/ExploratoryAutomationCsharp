@@ -77,4 +77,14 @@ namespace PageObjectPatternDemo
         }
     }
 
+    [TestClass]
+    public class ReportingTests : OpinionsTests
+    {
+        [TestMethod]
+        public void TestingPresenceOfTextarea()
+        {
+            Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
+        }
+    }
+
 }
