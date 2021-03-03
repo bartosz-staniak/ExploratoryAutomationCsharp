@@ -153,13 +153,13 @@ namespace PageObjectPatternDemo
 
             try
             {
-                Opinions multipleOpinionsTest = new Opinions(webDriver, 3, test);
+                Opinions multipleOpinionsTest = new Opinions(driver, 3, test);
 
-                Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
+                Assert.IsFalse(driver.FindElement(Datalist.hideousButton).Displayed);
 
                 // Reporting to a file starts here
 
-                bool result = webDriver.FindElement(Datalist.hideousButton).Displayed;
+                bool result = driver.FindElement(Datalist.hideousButton).Displayed;
                 string resultInWords = $"For option 3 the button is displayed. Expected: False, Actual: {result}";
                 System.Console.WriteLine(resultInWords);
 
@@ -173,7 +173,7 @@ namespace PageObjectPatternDemo
             }
             finally
             {
-                webDriver.Quit();
+                driver.Quit();
             }
         }
 
