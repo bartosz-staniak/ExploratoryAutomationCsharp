@@ -85,6 +85,8 @@ namespace PageObjectPatternDemo
         {
             try
             {
+                TestingTheNewOpinoinsConstructor13();
+
                 Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
             } finally {
                 webDriver.Quit();
