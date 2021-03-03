@@ -147,7 +147,7 @@ namespace PageObjectPatternDemo
                 
         }
 
-        public static void letMeSeeIfThisUglyIdeaWorks()
+        public static void letMeSeeIfThisUglyIdeaWorks(IWebDriver driver)
         {
             string test = "test";
 
