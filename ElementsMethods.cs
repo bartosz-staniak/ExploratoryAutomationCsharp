@@ -161,11 +161,13 @@ namespace PageObjectPatternDemo
 
                 bool result = driver.FindElement(Datalist.hideousButton).Displayed;
                 string resultInWords = $"For option 3 the button is displayed. Expected: False, Actual: {result}";
+                string didItReallyWorkQuestionMarkX3 = "Did it really work?";
                 System.Console.WriteLine(resultInWords);
 
                 using (StreamWriter sw = File.AppendText("report.txt"))
                 {
                     sw.Write(Environment.NewLine + resultInWords);
+                    sw.Write(Environment.NewLine + didItReallyWorkQuestionMarkX3);
                 }
 
                 // Reporting to a file ends here
