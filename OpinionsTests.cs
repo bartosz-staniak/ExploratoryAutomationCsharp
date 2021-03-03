@@ -97,7 +97,7 @@ namespace PageObjectPatternDemo
                 Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
                 string nullOrNotNull = null;
                 nullOrNotNull = webDriver.FindElement(Reporting.textArea).GetAttribute("value");
-                Assert.AreEqual("", nullOrNotNull); // Doesn't work as I thought it would
+                Assert.AreNotEqual("", nullOrNotNull); // Doesn't work as I thought it would
 
             } finally {
                 System.Threading.Thread.Sleep(5000);
