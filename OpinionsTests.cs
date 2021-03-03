@@ -91,9 +91,11 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                TestingTheNewOpinoinsConstructor13(); // this one is failing, most probably due to driver.Quit() method
+                // TestingTheNewOpinoinsConstructor13(); // this one is failing, most probably due to driver.Quit() method
 
+                Reporting reporting = new Reporting(webDriver);
                 Assert.IsTrue(webDriver.FindElement(Reporting.textArea).Displayed);
+
             } finally {
                 webDriver.Quit();
             }
