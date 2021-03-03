@@ -210,7 +210,7 @@ namespace PageObjectPatternDemo
 
         public void anotherIdeaOfMine(IWebDriver drive)
         {
-            String report = letMeSeeIfThisUglyIdeaWorks(drive);
+            String report = letMeSeeIfThisUglyIdeaWorks(drive, true);
             webDriver.FindElement(textArea).SendKeys(report);
         }
     }
