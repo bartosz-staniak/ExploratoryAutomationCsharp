@@ -25,7 +25,7 @@ namespace PageObjectPatternDemo
                 webDriver.Manage().Window.Maximize();
                 WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(50));
                 createReportFile(); // part of the attempt to create the report file for the global use
-            } finally {
+            } catch {
                 webDriver.Quit();
             }
             
