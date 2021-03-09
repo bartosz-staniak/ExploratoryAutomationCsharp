@@ -215,6 +215,14 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(textArea).SendKeys(report);
         }
     }
+
+    public class Submitting : Reporting
+    {
+        public Submitting(IWebDriver driver) : base(driver)
+        {
+
+        }
+    }
         
 
 
