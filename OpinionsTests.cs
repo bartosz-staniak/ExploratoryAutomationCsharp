@@ -107,4 +107,19 @@ namespace PageObjectPatternDemo
         }
     }
 
+    [TestClass]
+    public class SubmittingReport : Configuration
+    {
+        [TestMethod]
+        public void TestingSubmittedReport()
+        {
+            try
+            {
+                Submitting submitting = new Submitting(webDriver);
+            } finally {
+
+            }
+        }
+    }
+
 }
