@@ -207,6 +207,7 @@ namespace PageObjectPatternDemo
         }
 
         public static By textArea = By.Id("reportHere");
+        public static By submitReportButton = By.Id("submitReport");
 
         public void anotherIdeaOfMine(IWebDriver drive)
         {
