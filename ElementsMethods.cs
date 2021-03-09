@@ -223,6 +223,7 @@ namespace PageObjectPatternDemo
         }
 
         public static By submitReportButton = By.Id("submitReport");
+        public static By readReport = By.Id("readReport");
 
         public void sendReport(IWebDriver driver)
         {
