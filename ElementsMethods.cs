@@ -223,6 +223,11 @@ namespace PageObjectPatternDemo
         }
 
         public static By submitReportButton = By.Id("submitReport");
+
+        public void sendReport(IWebDriver driver)
+        {
+            webDriver.FindElement(submitReportButton).Click();
+        }
     }
         
 
