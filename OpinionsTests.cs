@@ -117,6 +117,7 @@ namespace PageObjectPatternDemo
             {
                 Submitting submitting = new Submitting(webDriver);
             } finally {
+                System.Threading.Thread.Sleep(5000);
                 webDriver.Quit();
             }
         }
