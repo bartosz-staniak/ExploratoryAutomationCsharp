@@ -116,6 +116,7 @@ namespace PageObjectPatternDemo
             try
             {
                 Submitting submitting = new Submitting(webDriver);
+                Assert.IsNotNull(webDriver.FindElement(Submitting.readReport));
             } finally {
                 System.Threading.Thread.Sleep(5000);
                 webDriver.Quit();
