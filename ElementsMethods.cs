@@ -219,7 +219,7 @@ namespace PageObjectPatternDemo
     {
         public Submitting(IWebDriver driver) : base(driver)
         {
-
+            sendReport(driver);
         }
 
         public static By submitReportButton = By.Id("submitReport");
