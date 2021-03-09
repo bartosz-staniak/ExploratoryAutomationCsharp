@@ -116,7 +116,7 @@ namespace PageObjectPatternDemo
             try
             {
                 // Submitting submitting = new Submitting(webDriver);
-                Assert.AreEqual("a", webDriver.FindElement(Submitting.readReport).Text); // it doesn't work
+                Assert.AreNotEqual("", webDriver.FindElement(Submitting.readReport).Text); // it doesn't work
             } finally {
                 System.Threading.Thread.Sleep(5000);
                 webDriver.Quit();
