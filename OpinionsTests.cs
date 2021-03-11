@@ -127,7 +127,11 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class erasingReportHistory : SubmittingReport
     {
+        [TestMethod]
+        public void TestingErasedReport()
+        {
 
+        }
     }
 
 }
