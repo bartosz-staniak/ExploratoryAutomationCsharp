@@ -133,6 +133,7 @@ namespace PageObjectPatternDemo
             try
             {
                 Erasing erasing = new Erasing(webDriver);
+                Assert.AreNotEqual("abc", webDriver.FindElement(Submitting.readReport).Text);
             } finally {
                 System.Threading.Thread.Sleep(5000);
                 webDriver.Quit();
