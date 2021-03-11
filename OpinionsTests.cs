@@ -130,7 +130,12 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void TestingErasedReport()
         {
+            try
+            {
 
+            } finally {
+
+            }
         }
     }
 
