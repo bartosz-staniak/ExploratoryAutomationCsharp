@@ -124,4 +124,10 @@ namespace PageObjectPatternDemo
         }
     }
 
+    [TestClass]
+    public class erasingReportHistory : SubmittingReport
+    {
+
+    }
+
 }
