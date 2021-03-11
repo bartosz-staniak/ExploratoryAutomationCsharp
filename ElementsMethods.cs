@@ -237,6 +237,8 @@ namespace PageObjectPatternDemo
         {
 
         }
+
+        public static By clrReport = By.Id("clrReportHistory");
     }
         
 
