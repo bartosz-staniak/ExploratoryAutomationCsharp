@@ -235,7 +235,7 @@ namespace PageObjectPatternDemo
     {
         public Erasing(IWebDriver driver) : base(driver)
         {
-
+            clearReportHistory(driver);
         }
 
         public static By clrReportButton = By.Id("clrReportHistory");
