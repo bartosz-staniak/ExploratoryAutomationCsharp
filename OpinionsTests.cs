@@ -134,7 +134,7 @@ namespace PageObjectPatternDemo
             {
                 Erasing erasing = new Erasing(webDriver);
             } finally {
-
+                webDriver.Quit();
             }
         }
     }
