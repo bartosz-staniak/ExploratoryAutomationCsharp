@@ -132,7 +132,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-
+                Erasing erasing = new Erasing(webDriver);
             } finally {
 
             }
