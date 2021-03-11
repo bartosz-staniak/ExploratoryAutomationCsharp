@@ -239,6 +239,11 @@ namespace PageObjectPatternDemo
         }
 
         public static By clrReportButton = By.Id("clrReportHistory");
+
+        public void  clearReportHistory(IWebDriver driver)
+        {
+            webDriver.FindElement(clrReportButton).Click();
+        }
     }
         
 
