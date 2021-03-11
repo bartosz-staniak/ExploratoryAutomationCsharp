@@ -230,6 +230,14 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(submitReportButton).Click();
         }
     }
+
+    public class Erasing : Submitting
+    {
+        public Erasing(IWebDriver driver) : base(driver)
+        {
+
+        }
+    }
         
 
 
