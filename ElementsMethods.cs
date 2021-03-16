@@ -36,6 +36,20 @@ namespace PageObjectPatternDemo
             WaitTenSec();
         }
 
+        public void hideImageDisableQuit(IWebDriver driver, bool disableQuit)
+        {
+            try
+            {
+                webDriver.FindElement(InitialPage.buttonImage).Click();
+                WaitTenSec();
+                Assert.AreEqual("Show this image", webDriver.FindElement(InitialPage.buttonImage).Text);
+            } finally {
+                if (!disableQuit)
+                webDriver.Quit();
+            }
+            
+        }
+
 
         public void WaitTenSec()
         {
