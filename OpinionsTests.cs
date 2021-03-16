@@ -50,7 +50,7 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void AnUglyIdeaInTest()
         {
-            PageObjectPatternDemo.Opinions.letMeSeeIfThisUglyIdeaWorks(webDriver, false); // remember to remove static keywords from IWebDriver and this ugly method in ElementsMethods file
+            PageObjectPatternDemo.Opinions.letMeSeeIfThisUglyIdeaWorks(webDriver, true); // remember to remove static keywords from IWebDriver and this ugly method in ElementsMethods file
         }
         
         [TestMethod]
