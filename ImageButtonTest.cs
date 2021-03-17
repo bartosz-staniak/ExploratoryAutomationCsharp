@@ -57,4 +57,10 @@ namespace PageObjectPatternDemo
         
     }
 
+    [TestClass]
+    public class AlternativeTests : Configuration
+    {
+        
+    }
+
 }
