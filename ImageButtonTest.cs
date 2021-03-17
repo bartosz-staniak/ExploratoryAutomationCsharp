@@ -64,7 +64,7 @@ namespace PageObjectPatternDemo
         public void alternativeInitialTest()
         {
             InitialPage initialPage = new InitialPage(webDriver);
-            initialPage.hideImageDisableQuit(webDriver, false);
+            initialPage.hideImageDisableQuit(webDriver, true);
             initialPage.hideImageDisableQuit(webDriver, true);
         }
     }
