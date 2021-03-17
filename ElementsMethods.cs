@@ -15,6 +15,11 @@ namespace PageObjectPatternDemo
     public class InitialPage
     {
         public static IWebDriver webDriver; // there wasn't "public"
+
+        public InitialPage()
+        {
+
+        }
         
         public InitialPage(IWebDriver driver)
         {
@@ -42,7 +47,7 @@ namespace PageObjectPatternDemo
             {
                 webDriver.FindElement(InitialPage.buttonImage).Click();
                 WaitTenSec();
-                Assert.AreEqual("Show this image", webDriver.FindElement(InitialPage.buttonImage).Text);
+                Assert.AreEqual("Show this image", driver.FindElement(InitialPage.buttonImage).Text);
             } finally {
                 if (!disableQuit)
                 webDriver.Quit();
