@@ -69,7 +69,7 @@ namespace PageObjectPatternDemo
                 WaitTenSec();
 
                 if (!disableAssert)
-                Assert.AreEqual("Show this imag", driver.FindElement(InitialPage.buttonImage).Text);
+                Assert.AreEqual("Show this image", driver.FindElement(InitialPage.buttonImage).Text);
             }
             finally
             {
