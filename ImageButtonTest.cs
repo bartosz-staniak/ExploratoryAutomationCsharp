@@ -60,13 +60,19 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class AlternativeTests : Configuration
     {
-        [TestMethod]
+        [TestMethod] // this test method can be extended as it's not meant to be an end-to-end method, as long as all methods do not call driver's .quit method
         public void alternativeInitialTest()
         {
-            InitialPage initialPage = new InitialPage(webDriver);
-            initialPage.hideImageDisableQuit(webDriver, true);
-            initialPage.hideImageCustomAssert();
-            Assert.AreEqual("Hide this image", webDriver.FindElement(InitialPage.buttonImage).Text);
+            try
+            {
+                InitialPage initialPage = new InitialPage(webDriver);
+                initialPage.hideImageDisableQuit(webDriver, true);
+                initialPage.hideImageCustomAssert();
+                Assert.AreEqual("Hide this image", webDriver.FindElement(InitialPage.buttonImage).Text);
+            } finally {
+                webDriver.Quit();
+            }
+            
         }
     }
 
