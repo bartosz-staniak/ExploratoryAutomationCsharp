@@ -60,7 +60,11 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class AlternativeTests : Configuration
     {
-        
+        [TestMethod]
+        public void alternativeInitialTest()
+        {
+            InitialPage initialPage = new InitialPage(webDriver);
+        }
     }
 
 }
