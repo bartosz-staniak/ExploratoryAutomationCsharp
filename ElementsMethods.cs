@@ -45,7 +45,6 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                System.Threading.Thread.Sleep(5000);
                 webDriver.FindElement(InitialPage.buttonImage).Click();
                 WaitTenSec();
                 Assert.AreEqual("Show this image", driver.FindElement(InitialPage.buttonImage).Text);
