@@ -47,7 +47,7 @@ namespace PageObjectPatternDemo
             {
                 webDriver.FindElement(InitialPage.buttonImage).Click();
                 WaitTenSec();
-                Assert.AreEqual("Show this image", driver.FindElement(InitialPage.buttonImage).Text);
+                Assert.AreEqual("Show this imag", driver.FindElement(InitialPage.buttonImage).Text);
             } finally {
                 if (!disableQuit)
                 webDriver.Quit();
