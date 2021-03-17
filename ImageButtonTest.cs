@@ -69,6 +69,8 @@ namespace PageObjectPatternDemo
                 initialPage.hideImageDisableQuit(webDriver, true);
                 initialPage.hideImageCustomAssert();
                 Assert.AreEqual("Hide this image", webDriver.FindElement(InitialPage.buttonImage).Text);
+
+                initialPage.hideImageBoolQuitAssert(webDriver, true, false);
             } finally {
                 webDriver.Quit();
             }
