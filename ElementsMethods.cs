@@ -41,6 +41,12 @@ namespace PageObjectPatternDemo
             WaitTenSec();
         }
 
+        public void hideImageCustomAssert()
+        {
+            webDriver.FindElement(InitialPage.buttonImage).Click();
+            WaitTenSec();
+        }
+
         public void hideImageDisableQuit(IWebDriver driver, bool disableQuit)
         {
             try
