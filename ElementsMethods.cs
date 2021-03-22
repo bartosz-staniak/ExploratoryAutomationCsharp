@@ -138,7 +138,7 @@ namespace PageObjectPatternDemo
         public static By opinionEleven = By.XPath("//*[@id='opinions']/option[11]");
         public static By opinionTwelve = By.XPath("//*[@id='opinions']/option[12]");
         public static By opinionThirteen = By.XPath("//*[@id='opinions']/option[13]");
-        public static By hideousButton = By.XPath("/html/body/div/button[1]");
+        public static By hideousButton = By.XPath("/html/body/div/button[2]");
 
         public void navigateDataList()
         {
