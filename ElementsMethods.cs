@@ -100,7 +100,7 @@ namespace PageObjectPatternDemo
             this.WaitTenSec();
         }
 
-        public static By button1 = By.Id("button1");
+        public static By button1 = By.Id("hide_hideous_page_btn");
 
         public void hideMainDiv()
         {
