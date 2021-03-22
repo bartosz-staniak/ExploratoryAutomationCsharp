@@ -34,6 +34,7 @@ namespace PageObjectPatternDemo
         }
 
         public static By buttonImage = By.Id("buttonImage");
+        public static By hideousButton = By.Id("button1");
 
         public void hideImage()
         {
@@ -99,8 +100,6 @@ namespace PageObjectPatternDemo
             this.hideMainDiv();
             this.WaitTenSec();
         }
-
-        public static By hideousButton = By.Id("button1");
 
         public void hideMainDiv()
         {
