@@ -34,7 +34,7 @@ namespace PageObjectPatternDemo
         }
 
         public static By buttonImage = By.Id("buttonImage");
-        public static By hideousButton = By.Id("button1");
+        public static By hideousButton = By.Id("hideous_btn");
 
         public void hideImage()
         {
