@@ -47,7 +47,7 @@ namespace PageObjectPatternDemo
             try
             {
                 Datalist dataList = new Datalist(webDriver, test);
-
+                System.Threading.Thread.Sleep(5000);
                 Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // it's working
             } finally {
                 webDriver.Quit();
