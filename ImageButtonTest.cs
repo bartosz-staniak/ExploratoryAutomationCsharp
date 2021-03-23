@@ -15,9 +15,9 @@ namespace PageObjectPatternDemo
 
             try
             {
-                InitialPage initialPage = new InitialPage(webDriver, test);
+                InitialClass initialPage = new InitialClass(webDriver, test);
 
-                string buttonImageText = webDriver.FindElement(InitialPage.buttonImage).Text;
+                string buttonImageText = webDriver.FindElement(InitialClass.buttonImage).Text;
                 Assert.AreEqual("Show this image", buttonImageText);
             } finally {
                 webDriver.Quit();
@@ -65,14 +65,14 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                InitialPage initialPage = new InitialPage(webDriver);
+                InitialClass initialPage = new InitialClass(webDriver);
                 initialPage.hideImageDisableQuit(webDriver, true);
                 initialPage.hideImageCustomAssert();
-                Assert.AreEqual("Hide this image", webDriver.FindElement(InitialPage.buttonImage).Text);
+                Assert.AreEqual("Hide this image", webDriver.FindElement(InitialClass.buttonImage).Text);
 
                 initialPage.hideImageBoolQuitAssert(webDriver, true, false);
                 initialPage.hideImageBoolQuitAssert(webDriver, true, true);
-                Assert.AreEqual("Hide this image", webDriver.FindElement(InitialPage.buttonImage).Text);
+                Assert.AreEqual("Hide this image", webDriver.FindElement(InitialClass.buttonImage).Text);
                 initialPage.hideImageBoolQuitAssert(webDriver, false, false);
             } finally {
                 webDriver.Quit();

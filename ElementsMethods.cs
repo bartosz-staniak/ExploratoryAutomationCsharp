@@ -12,21 +12,21 @@ namespace PageObjectPatternDemo
 {
     [TestClass]
 
-    public class InitialPage
+    public class InitialClass
     {
         public static IWebDriver webDriver; // there wasn't "public"
 
-        public InitialPage()
+        public InitialClass()
         {
 
         }
         
-        public InitialPage(IWebDriver driver)
+        public InitialClass(IWebDriver driver)
         {
             webDriver = driver;
         }
         
-        public InitialPage(IWebDriver driver, string any)
+        public InitialClass(IWebDriver driver, string any)
         {
             webDriver = driver; // there was "this."webDriver
             this.hideImage();
@@ -38,13 +38,13 @@ namespace PageObjectPatternDemo
 
         public void hideImage()
         {
-            webDriver.FindElement(InitialPage.buttonImage).Click();
+            webDriver.FindElement(InitialClass.buttonImage).Click();
             WaitTenSec();
         }
 
         public void hideImageCustomAssert()
         {
-            webDriver.FindElement(InitialPage.buttonImage).Click();
+            webDriver.FindElement(InitialClass.buttonImage).Click();
             WaitTenSec();
         }
 
@@ -52,9 +52,9 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                webDriver.FindElement(InitialPage.buttonImage).Click();
+                webDriver.FindElement(InitialClass.buttonImage).Click();
                 WaitTenSec();
-                Assert.AreEqual("Show this image", driver.FindElement(InitialPage.buttonImage).Text);
+                Assert.AreEqual("Show this image", driver.FindElement(InitialClass.buttonImage).Text);
             } finally {
                 if (!disableQuit)
                 webDriver.Quit();
@@ -66,11 +66,11 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                webDriver.FindElement(InitialPage.buttonImage).Click();
+                webDriver.FindElement(InitialClass.buttonImage).Click();
                 WaitTenSec();
 
                 if (!disableAssert)
-                Assert.AreEqual("Show this image", driver.FindElement(InitialPage.buttonImage).Text);
+                Assert.AreEqual("Show this image", driver.FindElement(InitialClass.buttonImage).Text);
             }
             finally
             {
@@ -88,7 +88,7 @@ namespace PageObjectPatternDemo
     }
 
 
-    public class InitialPageII : InitialPage
+    public class InitialPageII : InitialClass
     {
         public InitialPageII(IWebDriver driver) : base(driver)
         {
@@ -109,7 +109,7 @@ namespace PageObjectPatternDemo
 
     }
 
-    public class Datalist : InitialPage
+    public class Datalist : InitialClass
     {
         public Datalist(IWebDriver driver) : base (driver)
         {
