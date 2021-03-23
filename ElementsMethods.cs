@@ -88,14 +88,14 @@ namespace PageObjectPatternDemo
     }
 
 
-    public class InitialPageII : InitialClass
+    public class InitialClassII : InitialClass
     {
-        public InitialPageII(IWebDriver driver) : base(driver)
+        public InitialClassII(IWebDriver driver) : base(driver)
         {
 
         }
         
-        public InitialPageII(IWebDriver driver, string any) : base(driver, any)
+        public InitialClassII(IWebDriver driver, string any) : base(driver, any)
         {
             this.hideMainDiv();
             this.WaitTenSec();
@@ -103,7 +103,7 @@ namespace PageObjectPatternDemo
 
         public void hideMainDiv()
         {
-            webDriver.FindElement(InitialPageII.hideousButton).Click();
+            webDriver.FindElement(InitialClassII.hideousButton).Click();
             WaitTenSec();
         }
 

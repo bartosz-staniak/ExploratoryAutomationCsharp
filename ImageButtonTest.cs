@@ -31,9 +31,9 @@ namespace PageObjectPatternDemo
 
             try
             {
-                InitialPageII initialPageII = new InitialPageII(webDriver, test);
+                InitialClassII initialPageII = new InitialClassII(webDriver, test);
 
-                string buttonDivText = webDriver.FindElement(InitialPageII.hideousButton).Text;
+                string buttonDivText = webDriver.FindElement(InitialClassII.hideousButton).Text;
                 Assert.AreEqual("Oh well, bring it back", buttonDivText);
             } finally {
                 webDriver.Quit();
