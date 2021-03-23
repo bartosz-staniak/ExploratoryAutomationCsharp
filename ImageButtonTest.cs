@@ -5,7 +5,7 @@ namespace PageObjectPatternDemo
 {
 
     [TestClass]
-    public class ImageButtonTest : Configuration
+    public class ClickBtnToHideImageTest : Configuration
     {
         // string test = ("test");
 
