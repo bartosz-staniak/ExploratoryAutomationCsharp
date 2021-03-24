@@ -10,7 +10,7 @@ namespace PageObjectPatternDemo
         // string test = ("test");
 
         [TestMethod]
-        public void FirstTest()
+        public void HideImageTest()
         {
 
             try
