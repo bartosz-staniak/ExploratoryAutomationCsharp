@@ -26,7 +26,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void SecondTest()
+        public void HidePageContents()
         {
 
             try
