@@ -27,4 +27,8 @@ namespace PageObjectPatternDemo
         }
     }
 
+    [TestClass]
+    public class CustomTests : Configuration {
+
+
 }
