@@ -30,6 +30,10 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class CustomTests : Configuration
     {
+        public void customMethod()
+        {
+
+        }
 
     }
 }
