@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace PageObjectPatternDemo
 {
-    [TestClass]
 
     public class InitialClass
     {
