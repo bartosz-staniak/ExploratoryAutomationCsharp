@@ -32,7 +32,7 @@ namespace PageObjectPatternDemo
     {
         public void customMethod()
         {
-            
+            Datalist.NavigateDataList();
         }
 
     }
