@@ -33,7 +33,12 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void customMethod()
         {
-            Datalist.NavigateDataList();
+            try
+            {
+                Datalist.NavigateDataList();
+            } finally {
+                webDriver.Quit();
+            }
         }
 
     }
