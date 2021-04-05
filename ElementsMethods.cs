@@ -119,7 +119,7 @@ namespace PageObjectPatternDemo
         
         public Datalist(IWebDriver driver, string any) : base(driver, any)
         {
-            this.navigateDataList();
+            this.NavigateDataList();
         }
 
         public static By dataList = By.Id("dataList");
@@ -139,7 +139,7 @@ namespace PageObjectPatternDemo
         public static By opinionThirteen = By.XPath("//*[@id='opinions']/option[13]");
         // public static By hideousButton = By.XPath("/html/body/div/button[2]");
 
-        public void navigateDataList()
+        public void NavigateDataList()
         {
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
@@ -147,7 +147,7 @@ namespace PageObjectPatternDemo
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
         }
 
-        public void navigateDataList(By opinion)
+        public void NavigateDataList(By opinion)
         {
             string option = webDriver.FindElement(opinion).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(option);
@@ -166,25 +166,25 @@ namespace PageObjectPatternDemo
         
         public Opinions(IWebDriver driver, string any) : base(driver, any)
         {
-            navigateDataList();
+            NavigateDataList();
         }
 
         public Opinions(IWebDriver driver, int option, string any) : base(driver)
         {
             if (option == 1)
             {
-                this.navigateDataList(opinionOne);
+                this.NavigateDataList(opinionOne);
             }
             else if (option == 3)
             {
-                this.navigateDataList(opinionThree);
+                this.NavigateDataList(opinionThree);
             }
             else if (option == 2)
             {
-                this.navigateDataList(opinionTwo);
+                this.NavigateDataList(opinionTwo);
             }
             else
-                this.navigateDataList(opinionThirteen);
+                this.NavigateDataList(opinionThirteen);
                 
         }
 
