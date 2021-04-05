@@ -30,6 +30,7 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class CustomTests : Configuration
     {
+        [TestMethod]
         public void customMethod()
         {
             Datalist.NavigateDataList();
