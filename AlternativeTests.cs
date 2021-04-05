@@ -35,7 +35,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                Datalist.NavigateDataList();
+                Datalist.NavigateDataList(); // add sleep and another mehotd to see if this approach works
             } finally {
                 webDriver.Quit();
             }
