@@ -118,7 +118,7 @@ namespace PageObjectPatternDemo
         
         public Datalist(IWebDriver driver, string any) : base(driver, any)
         {
-            this.NavigateDataList();
+            NavigateDataList();
         }
 
         public static By dataList = By.Id("dataList");
@@ -138,7 +138,7 @@ namespace PageObjectPatternDemo
         public static By opinionThirteen = By.XPath("//*[@id='opinions']/option[13]");
         // public static By hideousButton = By.XPath("/html/body/div/button[2]");
 
-        public void NavigateDataList()
+        public static void NavigateDataList()
         {
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
