@@ -146,7 +146,7 @@ namespace PageObjectPatternDemo
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
         }
 
-        public void NavigateDataList(IWebDriver webDriver)
+        public static void NavigateDataList(IWebDriver webDriver)
         {
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
