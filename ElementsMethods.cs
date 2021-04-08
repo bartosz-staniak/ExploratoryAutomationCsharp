@@ -146,20 +146,20 @@ namespace PageObjectPatternDemo
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
         }
 
-        public static void NavigateDataListDriver(IWebDriver webDriver)
-        {
-            string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
-            webDriver.FindElement(dataList).SendKeys(opinionOneToString);
-            Actions action = new Actions(webDriver);
-            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
-        }
-
         public void NavigateDataList(By opinion)
         {
             string option = webDriver.FindElement(opinion).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(option);
             Actions action = new Actions(webDriver);
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, 100).Click().Build().Perform();
+        }
+
+        public static void NavigateDataListDriver(IWebDriver webDriver)
+        {
+            string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
+            webDriver.FindElement(dataList).SendKeys(opinionOneToString);
+            Actions action = new Actions(webDriver);
+            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
         }
 
     }
