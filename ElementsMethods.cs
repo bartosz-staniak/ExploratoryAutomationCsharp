@@ -160,7 +160,7 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
             Actions action = new Actions(webDriver);
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
-            Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
+            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
         }
 
     }
