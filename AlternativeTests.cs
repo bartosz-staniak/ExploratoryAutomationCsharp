@@ -16,10 +16,10 @@ namespace PageObjectPatternDemo
                 initialPage.hideImageCustomAssert();
                 Assert.AreEqual("Hide this image", webDriver.FindElement(InitialClass.buttonImage).Text);
 
-                initialPage.hideImageBoolQuitAssert(webDriver, true, false);
-                initialPage.hideImageBoolQuitAssert(webDriver, true, true);
+                initialPage.HideImageBoolQuitAssert(webDriver, true, false);
+                initialPage.HideImageBoolQuitAssert(webDriver, true, true);
                 Assert.AreEqual("Hide this image", webDriver.FindElement(InitialClass.buttonImage).Text);
-                initialPage.hideImageBoolQuitAssert(webDriver, false, false);
+                initialPage.HideImageBoolQuitAssert(webDriver, false, false);
             } finally {
                 webDriver.Quit();
             }
