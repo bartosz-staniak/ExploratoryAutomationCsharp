@@ -61,7 +61,7 @@ namespace PageObjectPatternDemo
             
         }
 
-        public void hideImageBoolQuitAssert(IWebDriver driver, bool disableQuit, bool disableAssert)
+        public void HideImageBoolQuitAssert(IWebDriver driver, bool disableQuit, bool disableAssert)
         {
             try
             {
