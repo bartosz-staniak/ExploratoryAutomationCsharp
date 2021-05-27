@@ -26,7 +26,7 @@ namespace PageObjectPatternDemo
                 WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(50));
                 createReportFile(); // part of the attempt to create the report file for the global use
             } catch {
-                webDriver.Quit();
+                webDriver.Quit(); // if tests fail here then check driver version
             }
             
         }
