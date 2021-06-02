@@ -18,9 +18,6 @@ namespace PageObjectPatternDemo
         public Configuration()
         {
 
-
-            Wait = new WebDriverWait(webDriver, new TimeSpan(0, 0, 5));
-
             try
             {
                 ChromeOptions chromeOptions = new ChromeOptions();
