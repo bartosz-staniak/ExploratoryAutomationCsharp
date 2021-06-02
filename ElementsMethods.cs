@@ -29,7 +29,6 @@ namespace PageObjectPatternDemo
         {
             webDriver = driver; // there was "this."webDriver
             this.hideImage();
-            this.WaitTenSec();
         }
 
         public static By buttonImage = By.Id("buttonImage");
@@ -38,13 +37,11 @@ namespace PageObjectPatternDemo
         public void hideImage()
         {
             webDriver.FindElement(InitialClass.buttonImage).Click();
-            WaitTenSec();
         }
 
         public void hideImageCustomAssert()
         {
             webDriver.FindElement(InitialClass.buttonImage).Click();
-            WaitTenSec();
         }
 
         public void hideImageDisableQuit(IWebDriver driver, bool disableQuit)
@@ -52,7 +49,6 @@ namespace PageObjectPatternDemo
             try
             {
                 webDriver.FindElement(InitialClass.buttonImage).Click();
-                WaitTenSec();
                 Assert.AreEqual("Show this image", driver.FindElement(InitialClass.buttonImage).Text);
             } finally {
                 if (!disableQuit)
@@ -66,7 +62,6 @@ namespace PageObjectPatternDemo
             try
             {
                 webDriver.FindElement(InitialClass.buttonImage).Click();
-                WaitTenSec();
 
                 if (!disableAssert)
                 Assert.AreEqual("Show this image", driver.FindElement(InitialClass.buttonImage).Text);
@@ -97,13 +92,11 @@ namespace PageObjectPatternDemo
         public InitialClassII(IWebDriver driver, string any) : base(driver, any)
         {
             this.hideMainDiv();
-            this.WaitTenSec();
         }
 
         public void hideMainDiv()
         {
             webDriver.FindElement(InitialClassII.hideousButton).Click();
-            WaitTenSec();
         }
 
     }
