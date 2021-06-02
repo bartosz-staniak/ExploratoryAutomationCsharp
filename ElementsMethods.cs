@@ -73,12 +73,6 @@ namespace PageObjectPatternDemo
             }
         }
 
-
-        public void WaitTenSec()
-        {
-            WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
-        }
-
     }
 
 
