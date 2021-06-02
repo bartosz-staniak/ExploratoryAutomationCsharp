@@ -7,10 +7,6 @@ namespace PageObjectPatternDemo
     [TestClass]
     public class ClickBtnToHideImageTest : Configuration
     {
-        ClickBtnToHideImageTest()
-        {
-
-        }
 
         // string test = ("test");
 
