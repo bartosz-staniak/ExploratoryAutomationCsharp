@@ -48,6 +48,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
+                Configuration.wait.Until(ExpectedConditions.ElementToBeClickable(buttonImage));
                 webDriver.FindElement(InitialClass.buttonImage).Click();
                 Assert.AreEqual("Show this image", driver.FindElement(InitialClass.buttonImage).Text);
             } finally {
