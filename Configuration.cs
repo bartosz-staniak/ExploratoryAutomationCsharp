@@ -12,6 +12,7 @@ namespace PageObjectPatternDemo
     public class Configuration
     {
         public IWebDriver webDriver;
+        public WebDriverWait wait;
 
 
         public Configuration()
