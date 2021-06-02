@@ -24,7 +24,7 @@ namespace PageObjectPatternDemo
                 webDriver = new ChromeDriver(@"C:\ChromeDriver", chromeOptions);
                 webDriver.Navigate().GoToUrl("http://127.0.0.1:5500/index.html");
                 webDriver.Manage().Window.Maximize();
-                Wait = new WebDriverWait(webDriver, new TimeSpan(0,0,5));
+                
                 createReportFile(); // part of the attempt to create the report file for the global use
             } catch {
                 webDriver.Quit(); // if tests fail here then check driver version
