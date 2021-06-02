@@ -49,7 +49,7 @@ namespace PageObjectPatternDemo
             {
                 Datalist dataList = new Datalist(webDriver, test);
                 System.Threading.Thread.Sleep(5000);
-                Wait.Until(ExpectedConditions.ElementToBeClickable(webDriver.FindElement(Datalist.hideousButton));
+
                 Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // it's working
             } finally {
                 webDriver.Quit();
