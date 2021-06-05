@@ -36,6 +36,7 @@ namespace PageObjectPatternDemo
 
         public void hideImage()
         {
+            Configuration.wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(buttonImage));
             webDriver.FindElement(InitialClass.buttonImage).Click();
         }
 
