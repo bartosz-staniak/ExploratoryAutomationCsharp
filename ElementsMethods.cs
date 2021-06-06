@@ -142,7 +142,6 @@ namespace PageObjectPatternDemo
             Actions action = new Actions(webDriver);
             // action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, 100).Click().Build().Perform();
             action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(50, -50).Click().Build().Perform();
-            System.Threading.Thread.Sleep(5000);
         }
 
         public static void NavigateDataListDriver(IWebDriver webDriver)
