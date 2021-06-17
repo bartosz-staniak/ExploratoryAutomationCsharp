@@ -42,5 +42,11 @@ namespace PageObjectPatternDemo
             }
         }
 
+        [TestMethod]
+        public void testPOSTmethod()
+        {
+
+        }
+
     }
 }
