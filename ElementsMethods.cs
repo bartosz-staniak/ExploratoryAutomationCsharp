@@ -127,6 +127,10 @@ namespace PageObjectPatternDemo
         public static By opinionThirteen = By.XPath("//*[@id='opinions']/option[13]");
         // public static By hideousButton = By.XPath("/html/body/div/button[2]");
 
+        // --- POST Interface elements start
+
+        // --- POST Interface elements end
+
         public void NavigateDataList()
         {
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
