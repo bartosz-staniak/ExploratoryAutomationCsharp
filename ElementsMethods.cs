@@ -285,7 +285,7 @@ namespace PageObjectPatternDemo
         }
     }
         
-    public class API_Interaction : InitialClass
+    public static class API_Interaction : InitialClass
     {
         public API_Interaction(IWebDriver driver) : base(driver)
         {
