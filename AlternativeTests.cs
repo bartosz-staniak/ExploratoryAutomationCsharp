@@ -45,7 +45,14 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void testGETmethod()
         {
+            try
+            {
 
+            }
+            finally
+            {
+
+            }
         }
 
     }
