@@ -162,6 +162,11 @@ namespace PageObjectPatternDemo
             Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // remove the assert and use it in copied method
         }
 
+        public static void InsertId(int id)
+        {
+            String idToString = "" + id;
+            webDriver.FindElement(insertIdinput).SendKeys((idToString));
+        }
     }
 
     public class Opinions : Datalist
