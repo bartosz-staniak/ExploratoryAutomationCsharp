@@ -43,7 +43,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void testPOSTmethod()
+        public void testGETmethod()
         {
 
         }
