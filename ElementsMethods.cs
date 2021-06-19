@@ -289,7 +289,7 @@ namespace PageObjectPatternDemo
     {
         public API_Interaction(IWebDriver driver) : base(driver)
         {
-
+            webDriver = driver;
         }
 
         // --- GET Interface elements start
