@@ -306,6 +306,7 @@ namespace PageObjectPatternDemo
             Thread.Sleep(3000);
             String idToString = "" + id;
             webDriver.FindElement(insertIdinput).SendKeys((idToString));
+            Thread.Sleep(3000);
         }
     }
 
