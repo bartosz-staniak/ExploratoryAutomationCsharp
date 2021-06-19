@@ -285,7 +285,7 @@ namespace PageObjectPatternDemo
         }
     }
         
-    public static class API_Interaction : InitialClass
+    public static class API_Interaction
     {
 
         // --- GET Interface elements start
