@@ -127,15 +127,6 @@ namespace PageObjectPatternDemo
         public static By opinionThirteen = By.XPath("//*[@id='opinions']/option[13]");
         // public static By hideousButton = By.XPath("/html/body/div/button[2]");
 
-        // --- GET Interface elements start
-        public static By insertIdinput = By.Id("recordId");
-        // --- GET Interface elements end
-
-
-        // --- POST Interface elements start
-
-        // --- POST Interface elements end
-
         public void NavigateDataList()
         {
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
@@ -296,6 +287,16 @@ namespace PageObjectPatternDemo
         
     public class API_Interaction : InitialClass
     {
+
+        // --- GET Interface elements start
+        public static By insertIdinput = By.Id("recordId");
+        // --- GET Interface elements end
+
+
+        // --- POST Interface elements start
+
+        // --- POST Interface elements end
+
         public static void InsertId(int id)
         {
             String idToString = "" + id;
