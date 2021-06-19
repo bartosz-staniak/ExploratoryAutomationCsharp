@@ -284,25 +284,5 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(clrReportButton).Click();
         }
     }
-        
-    public static class API_Interaction
-    {
-
-        // --- GET Interface elements start
-        public static By insertIdinput = By.Id("recordId");
-        // --- GET Interface elements end
-
-
-        // --- POST Interface elements start
-
-        // --- POST Interface elements end
-
-        public static void InsertId(IWebDriver webDriver, int id)
-        {
-            String idToString = "" + id;
-            webDriver.FindElement(insertIdinput).SendKeys((idToString));
-
-        }
-    }
 
 }
