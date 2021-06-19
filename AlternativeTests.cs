@@ -47,7 +47,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                API_Interaction.InsertId(webDriver, 1);
+                API_Interaction.InsertId(1);
             }
             finally
             {
