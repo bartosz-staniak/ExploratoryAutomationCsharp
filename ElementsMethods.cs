@@ -127,6 +127,11 @@ namespace PageObjectPatternDemo
         public static By opinionThirteen = By.XPath("//*[@id='opinions']/option[13]");
         // public static By hideousButton = By.XPath("/html/body/div/button[2]");
 
+        // --- GET Interface elements start
+
+        // --- GET Interface elements end
+
+
         // --- POST Interface elements start
 
         // --- POST Interface elements end
