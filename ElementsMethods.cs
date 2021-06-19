@@ -303,6 +303,7 @@ namespace PageObjectPatternDemo
 
         public static void InsertId(int id)
         {
+            Thread.Sleep(3000);
             String idToString = "" + id;
             webDriver.FindElement(insertIdinput).SendKeys((idToString));
         }
