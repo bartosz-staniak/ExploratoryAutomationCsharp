@@ -299,6 +299,9 @@ namespace PageObjectPatternDemo
         }
     }
         
+    public class API_tests : InitialClass
+    {
 
+    }
 
 }
