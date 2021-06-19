@@ -301,7 +301,7 @@ namespace PageObjectPatternDemo
 
         // --- POST Interface elements end
 
-        public static void InsertId(IWebDriver driver, int id)
+        public static void InsertId(int id)
         {
             String idToString = "" + id;
             webDriver.FindElement(insertIdinput).SendKeys((idToString));
