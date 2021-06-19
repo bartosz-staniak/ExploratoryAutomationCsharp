@@ -47,11 +47,11 @@ namespace PageObjectPatternDemo
         {
             try
             {
-
+                API_Interaction.InsertId(1);
             }
             finally
             {
-
+                webDriver.Quit();
             }
         }
 
