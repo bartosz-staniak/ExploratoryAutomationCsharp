@@ -299,7 +299,7 @@ namespace PageObjectPatternDemo
         }
     }
         
-    public class API_tests : InitialClass
+    public class API_Interaction : InitialClass
     {
 
     }
