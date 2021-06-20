@@ -44,6 +44,14 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void getRecordTest()
         {
+            try
+            {
+
+            }
+            finally
+            {
+
+            }
 
         }
 
