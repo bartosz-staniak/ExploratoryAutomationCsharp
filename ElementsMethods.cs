@@ -294,6 +294,7 @@ namespace PageObjectPatternDemo
         
         public static By recordIdInput = By.Id("recordId");
         public static By getRecordByIdButton = By.Id("getRecordById");
+        public static By readRecordParagraph = By.Id("readRecord");
 
         public void getRecordFromDb()
         {
