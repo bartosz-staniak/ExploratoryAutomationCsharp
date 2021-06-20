@@ -46,7 +46,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                API_elements api_Elements = new API_elements();
+                API_elements api_Elements = new API_elements(webDriver);
                 api_Elements.getRecordFromDb();
             }
             finally
