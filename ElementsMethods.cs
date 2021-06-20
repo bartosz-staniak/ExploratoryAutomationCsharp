@@ -285,4 +285,9 @@ namespace PageObjectPatternDemo
         }
     }
 
+    public class API_elements : InitialClass
+    {
+
+    }
+
 }
