@@ -46,7 +46,8 @@ namespace PageObjectPatternDemo
         {
             try
             {
-
+                API_elements api_Elements = new API_elements();
+                api_Elements.getRecordFromDb();
             }
             finally
             {
