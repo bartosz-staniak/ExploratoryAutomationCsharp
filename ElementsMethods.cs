@@ -287,7 +287,7 @@ namespace PageObjectPatternDemo
 
     public class API_elements : InitialClass
     {
-        public API_elements()
+        public API_elements(IWebDriver driver) : base(driver)
         {
 
         }
