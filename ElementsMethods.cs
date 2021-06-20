@@ -294,7 +294,7 @@ namespace PageObjectPatternDemo
         
         public static By recordIdInput = By.Id("recordId");
 
-        public void getRecordFromDb ()
+        public void getRecordFromDb()
         {
             webDriver.FindElement(recordIdInput).SendKeys("1");
         }
