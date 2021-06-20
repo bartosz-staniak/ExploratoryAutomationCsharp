@@ -41,6 +41,11 @@ namespace PageObjectPatternDemo
                 webDriver.Quit();
             }
         }
+        [TestMethod]
+        public void getRecordTest()
+        {
+
+        }
 
     }
 }
