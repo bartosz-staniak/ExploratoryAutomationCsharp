@@ -293,6 +293,11 @@ namespace PageObjectPatternDemo
         }
         
         public static By recordIdInput = By.Id("recordId");
+
+        public void getRecordFromDb ()
+        {
+
+        }
     }
 
 }
