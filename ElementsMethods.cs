@@ -287,7 +287,7 @@ namespace PageObjectPatternDemo
 
     public class API_elements : InitialClass
     {
-
+        public static By recordIdInput = By.Id("recordId");
     }
 
 }
