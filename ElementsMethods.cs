@@ -296,7 +296,7 @@ namespace PageObjectPatternDemo
         public static By getRecordByIdButton = By.Id("getRecordById");
         public static By readRecordParagraph = By.Id("readRecord");
 
-        public void getRecordFromDb()
+        public void getRecordFromDb(int n)
         {
             webDriver.FindElement(recordIdInput).SendKeys("1");
             webDriver.FindElement(getRecordByIdButton).Click();
