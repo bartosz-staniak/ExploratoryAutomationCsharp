@@ -48,7 +48,7 @@ namespace PageObjectPatternDemo
             {
                 API_elements api_Elements = new API_elements(webDriver);
                 api_Elements.getRecordFromDb();
-                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElement(webDriver.FindElement(API_elements.readRecordParagraph), "Ib:"));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElement(webDriver.FindElement(API_elements.readRecordParagraph), "Id:")); //returned failed result with "Ib:"
                 Assert.IsTrue(webDriver.FindElement(API_elements.readRecordParagraph).Text.Contains("Id:"));
             }
             finally
