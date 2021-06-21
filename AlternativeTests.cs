@@ -48,6 +48,7 @@ namespace PageObjectPatternDemo
             {
                 API_elements api_Elements = new API_elements(webDriver);
                 api_Elements.getRecordFromDb();
+                Assert.IsTrue(webDriver.FindElement(API_elements.readRecordParagraph).Text.Contains("Id:"));
             }
             finally
             {
