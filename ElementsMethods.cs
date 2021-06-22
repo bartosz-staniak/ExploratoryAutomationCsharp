@@ -298,7 +298,7 @@ namespace PageObjectPatternDemo
 
         public void getRecordFromDb(int n)
         {
-            webDriver.FindElement(recordIdInput).SendKeys("1");
+            webDriver.FindElement(recordIdInput).SendKeys("" + n);
             webDriver.FindElement(getRecordByIdButton).Click();
         }
     }
