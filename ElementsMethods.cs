@@ -134,7 +134,7 @@ namespace PageObjectPatternDemo
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
             Actions action = new Actions(webDriver);
-            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
+            // action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
             action.MoveToElement(webDriver.FindElement(paragraphBelowOpinions)).Click();
         }
 
