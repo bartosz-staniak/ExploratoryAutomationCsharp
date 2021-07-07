@@ -75,5 +75,18 @@ namespace PageObjectPatternDemo
 
         }
 
+        [TestMethod]
+        public void removeRedundantTest()
+        {
+            try
+            {
+
+            }
+            finally
+            {
+                webDriver.Quit();
+            }
+        }
+
     }
 }
