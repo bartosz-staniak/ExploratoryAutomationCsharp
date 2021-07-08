@@ -97,6 +97,14 @@ namespace PageObjectPatternDemo
 
     }
 
+    public class RedundantElements: InitialClass
+    {
+        public RedundantElements(IWebDriver driver) : base (driver)
+        {
+
+        }
+    }
+
     public class Datalist : InitialClass
     {
         public Datalist(IWebDriver driver) : base (driver)
