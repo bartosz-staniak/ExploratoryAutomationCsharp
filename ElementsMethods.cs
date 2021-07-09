@@ -103,7 +103,7 @@ namespace PageObjectPatternDemo
         IWebDriver _driver;
         public RedundantElements(IWebDriver driver) : base (driver)
         {
-
+            _driver = driver;
         }
 
         public IList<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
