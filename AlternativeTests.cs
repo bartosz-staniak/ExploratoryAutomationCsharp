@@ -82,10 +82,10 @@ namespace PageObjectPatternDemo
             try
             {
                 RedundantElements redundantElements = new RedundantElements(webDriver);
-                /*foreach (IWebElement redundant in redundantElements.redundants)
+                foreach (IWebElement redundant in redundantElements.redundants)
                 {
                     Assert.IsFalse(redundant.Displayed);
-                }*/
+                }
 
                 // redundantElements.getElementsList();
 
