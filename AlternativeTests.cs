@@ -86,6 +86,9 @@ namespace PageObjectPatternDemo
                 {
                     Assert.IsFalse(redundant.Displayed);
                 }*/
+
+                redundantElements.getElementsList();
+
             }
             finally
             {
