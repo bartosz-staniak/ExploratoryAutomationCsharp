@@ -104,8 +104,8 @@ namespace PageObjectPatternDemo
         {
             
         }
-
         // public IList<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
+        IReadOnlyCollection<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
     }
 
     public class Datalist : InitialClass
