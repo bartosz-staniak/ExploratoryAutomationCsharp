@@ -106,7 +106,7 @@ namespace PageObjectPatternDemo
         }
         // public IList<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
         // public IReadOnlyCollection<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
-        List<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant")); // another failed attempt to list redundant elements
+        // List<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant")); // another failed attempt to list redundant elements
 
         /*public void getElementsList()
         {
