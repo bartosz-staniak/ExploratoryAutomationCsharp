@@ -80,7 +80,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-
+                RedundantElements redundantElements = new RedundantElements(webDriver);
             }
             finally
             {
