@@ -105,7 +105,7 @@ namespace PageObjectPatternDemo
 
         }
 
-        IList<IWebElement> redundants = (IList<IWebElement>)By.ClassName("redundant");
+        public IList<IWebElement> redundants = (IList<IWebElement>)By.ClassName("redundant");
     }
 
     public class Datalist : InitialClass
