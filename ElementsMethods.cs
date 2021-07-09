@@ -100,13 +100,12 @@ namespace PageObjectPatternDemo
 
     public class RedundantElements : InitialClass
     {
-        static IWebDriver _driver;
         public RedundantElements(IWebDriver driver) : base (driver)
         {
-            _driver = driver;
+            
         }
 
-        public IList<IWebElement> redundants = _driver.FindElements(By.ClassName("redundant"));
+        public IList<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
     }
 
     public class Datalist : InitialClass
