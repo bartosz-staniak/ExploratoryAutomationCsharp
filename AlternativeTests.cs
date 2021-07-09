@@ -1,5 +1,6 @@
 ﻿// using MbUnit.Framework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 
 namespace PageObjectPatternDemo
 {
