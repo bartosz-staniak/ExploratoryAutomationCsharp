@@ -100,10 +100,10 @@ namespace PageObjectPatternDemo
 
     public class RedundantElements : InitialClass
     {
-        /*public RedundantElements(IWebDriver driver) : base (driver)
+        public RedundantElements(IWebDriver driver) : base (driver)
         {
             
-        }*/
+        }
 
         public IList<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
     }
