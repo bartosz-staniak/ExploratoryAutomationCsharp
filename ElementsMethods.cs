@@ -98,7 +98,7 @@ namespace PageObjectPatternDemo
 
     }
 
-    public class RedundantElements: InitialClass
+    public class RedundantElements : InitialClass
     {
         public RedundantElements(IWebDriver driver) : base (driver)
         {
