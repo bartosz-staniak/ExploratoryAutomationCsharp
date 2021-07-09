@@ -109,7 +109,7 @@ namespace PageObjectPatternDemo
 
         public void getElementsList()
         {
-
+            IList<IWebElement> redundants = webDriver.FindElements(By.ClassName("redundant"));
         }
     }
 
