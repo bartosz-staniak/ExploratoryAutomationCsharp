@@ -84,7 +84,7 @@ namespace PageObjectPatternDemo
                 RedundantElements redundantElements = new RedundantElements(webDriver);
                 foreach (IWebElement redundant in redundantElements.redundants)
                 {
-                    Assert.IsFalse(webDriver.FindElement(redundant).Displayed);
+                    Assert.IsFalse(redundant.Displayed);
                 }
             }
             finally
