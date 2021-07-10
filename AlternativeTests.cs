@@ -77,7 +77,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void removeRedundantTest()
+        public void confirmRedundantElementsPresenceTest()
         {
             try
             {
