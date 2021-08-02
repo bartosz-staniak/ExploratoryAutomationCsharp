@@ -94,5 +94,11 @@ namespace PageObjectPatternDemo
             }
         }
 
+        [TestMethod]
+        public void DefunctElementsPresenceTest()
+        {
+
+        }
+
     }
 }
