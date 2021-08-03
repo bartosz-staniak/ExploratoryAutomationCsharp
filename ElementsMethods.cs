@@ -114,6 +114,15 @@ namespace PageObjectPatternDemo
         }*/
     }
 
+    public class DefunctElements : InitialClass //perhaps it would be better to create a separate class from which Defunct and Redundant classes would inherit
+    {
+        public DefunctElements(IWebDriver driver) : base(driver)
+        {
+
+        }
+        public static IReadOnlyCollection<IWebElement> defunct = webDriver.FindElements(By.ClassName("defunct"));
+    }
+
     public class Datalist : InitialClass
     {
         public Datalist(IWebDriver driver) : base (driver)
