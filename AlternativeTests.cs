@@ -95,7 +95,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void DefunctElementsPresenceTest()
+        public void WipElementsPresenceTest()
         {
 
         }
