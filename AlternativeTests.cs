@@ -97,7 +97,14 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void WipElementsPresenceTest()
         {
+            try
+            {
 
+            }
+            finally
+            {
+                webDriver.Quit();
+            }
         }
 
     }
