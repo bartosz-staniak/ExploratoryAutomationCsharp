@@ -102,7 +102,7 @@ namespace PageObjectPatternDemo
                 WipElements wipElements = new WipElements(webDriver);
                 foreach(IWebElement wip in WipElements.wips)
                 {
-                    Assert.IsFalse(wip.Displayed);
+                    Assert.IsTrue(wip.Displayed);
                 }
             }
             finally
