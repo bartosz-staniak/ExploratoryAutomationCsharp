@@ -99,7 +99,11 @@ namespace PageObjectPatternDemo
         {
             try
             {
-
+                WipElements wipElements = new WipElements(webDriver);
+                foreach(IWebElement wip in WipElements.wips)
+                {
+                    Assert.IsFalse(wip.Displayed);
+                }
             }
             finally
             {
