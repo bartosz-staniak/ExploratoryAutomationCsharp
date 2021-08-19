@@ -123,6 +123,14 @@ namespace PageObjectPatternDemo
         public static IReadOnlyCollection<IWebElement> wips = webDriver.FindElements(By.ClassName("wip"));
     }
 
+    public class DateTimeElements : InitialClass
+    {
+        public DateTimeElements(IWebDriver driver) : base(driver)
+        {
+
+        }
+    }
+
     public class Datalist : InitialClass
     {
         public Datalist(IWebDriver driver) : base (driver)
