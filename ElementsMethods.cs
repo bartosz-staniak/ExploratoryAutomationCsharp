@@ -129,6 +129,8 @@ namespace PageObjectPatternDemo
         {
 
         }
+
+        public static By currentDateTime = By.Id("currentDateTime");
     }
 
     public class Datalist : InitialClass
