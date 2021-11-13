@@ -105,7 +105,7 @@ namespace PageObjectPatternDemo
 
         }
 
-        public static By alertButton;
+        public static By alertButton = By.Id("alertButton");
     }
 
     public class RedundantElements : InitialClass
