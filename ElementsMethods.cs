@@ -100,7 +100,10 @@ namespace PageObjectPatternDemo
 
     public class AlertButton : InitialClass
     {
+        public AlertButton(IWebDriver driver) : base(driver)
+        {
 
+        }
     }
 
     public class RedundantElements : InitialClass
