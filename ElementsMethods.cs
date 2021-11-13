@@ -104,6 +104,8 @@ namespace PageObjectPatternDemo
         {
 
         }
+
+        public static By alertButton;
     }
 
     public class RedundantElements : InitialClass
