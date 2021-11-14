@@ -113,7 +113,7 @@ namespace PageObjectPatternDemo
 
             var alertPresent = ExpectedConditions.AlertIsPresent();
 
-            return returnedValue;
+            return alertPresent;
         }
 
         public static void DismissAlert(IWebDriver webDriver)
