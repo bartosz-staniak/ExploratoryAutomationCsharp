@@ -111,7 +111,7 @@ namespace PageObjectPatternDemo
         {
             webDriver.FindElement(alertButton).Click();
 
-            Assert.IsTrue(webDriver.FindElement(Datalist.hideousButton).Displayed);
+            Assert.IsTrue();
         }
     }
 
