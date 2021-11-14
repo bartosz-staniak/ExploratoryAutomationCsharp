@@ -111,7 +111,7 @@ namespace PageObjectPatternDemo
         {
             Boolean returnedValue;
 
-            return;
+            return returnedValue;
         }
 
         public static void DismissAlert(IWebDriver webDriver)
