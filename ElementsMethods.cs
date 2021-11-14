@@ -111,6 +111,8 @@ namespace PageObjectPatternDemo
         {
             Boolean returnedValue = false;
 
+            var alertPresent;
+
             return returnedValue;
         }
 
