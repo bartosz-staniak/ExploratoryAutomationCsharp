@@ -109,6 +109,8 @@ namespace PageObjectPatternDemo
 
         Boolean IsAlertPresent()
         {
+            Boolean returnedValue;
+
             return;
         }
 
