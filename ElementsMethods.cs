@@ -109,7 +109,7 @@ namespace PageObjectPatternDemo
 
         public static void DismissAlert(IWebDriver webDriver)
         {
-            webDriver.FindElement(dataList).SendKeys(opinionOneToString);
+            webDriver.FindElement(alertButton).SendKeys(opinionOneToString);
 
             Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // remove the assert and use it in copied method
         }
