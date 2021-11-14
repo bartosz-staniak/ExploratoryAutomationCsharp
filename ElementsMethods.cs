@@ -111,7 +111,9 @@ namespace PageObjectPatternDemo
         {
             webDriver.FindElement(alertButton).Click();
 
-            Assert.IsTrue(var alertPresent = Boolean IsAlertPresent(webDriver) { return false });
+            var alertPresent = Boolean IsAlertPresent(webDriver) { return false }
+
+            Assert.IsTrue();
         }
     }
 
