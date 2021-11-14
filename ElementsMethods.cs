@@ -107,6 +107,11 @@ namespace PageObjectPatternDemo
 
         public static By alertButton = By.Id("alertButton");
 
+        Boolean IsAlertPresent()
+        {
+
+        }
+
         public static void DismissAlert(IWebDriver webDriver)
         {
             webDriver.FindElement(alertButton).Click();
