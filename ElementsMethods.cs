@@ -111,7 +111,7 @@ namespace PageObjectPatternDemo
         {
             Boolean returnedValue = false;
 
-            Boolean alertPresent = ExpectedConditions.AlertIsPresent();
+            IAlert alertPresent = ExpectedConditions.AlertIsPresent();
 
             return alertPresent;
         }
