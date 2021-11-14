@@ -109,10 +109,8 @@ namespace PageObjectPatternDemo
 
         public static void DismissAlert(IWebDriver webDriver)
         {
-            string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
-            Actions action = new Actions(webDriver);
-            action.MoveToElement(webDriver.FindElement(dataList)).MoveByOffset(0, -50).Click().Build().Perform(); // it's working, the button disappeared
+
             Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // remove the assert and use it in copied method
         }
     }
