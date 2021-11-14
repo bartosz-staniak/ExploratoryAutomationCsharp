@@ -111,7 +111,7 @@ namespace PageObjectPatternDemo
         {
             webDriver.FindElement(alertButton).Click();
 
-            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed); // remove the assert and use it in copied method
+            Assert.IsFalse(webDriver.FindElement(Datalist.hideousButton).Displayed);
         }
     }
 
