@@ -107,7 +107,7 @@ namespace PageObjectPatternDemo
 
         public static By alertButton = By.Id("alertButton");
 
-        public static void NavigateDataListDriver(IWebDriver webDriver)
+        public static void DismissAlert(IWebDriver webDriver)
         {
             string opinionOneToString = webDriver.FindElement(opinionOne).GetAttribute("value");
             webDriver.FindElement(dataList).SendKeys(opinionOneToString);
