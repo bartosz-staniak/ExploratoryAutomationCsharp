@@ -111,7 +111,7 @@ namespace PageObjectPatternDemo
         {
             Boolean returnedValue = false;
 
-            IAlert alertPresent = ExpectedConditions.AlertIsPresent();
+            IAlert alertPresent = ExpectedConditions.AlertIsPresent().Invoke(webDriver);
 
             return alertPresent;
         }
