@@ -109,7 +109,7 @@ namespace PageObjectPatternDemo
 
         Boolean IsAlertPresent()
         {
-
+            return;
         }
 
         public static void DismissAlert(IWebDriver webDriver)
