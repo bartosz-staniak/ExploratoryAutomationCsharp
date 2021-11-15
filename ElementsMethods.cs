@@ -111,7 +111,7 @@ namespace PageObjectPatternDemo
         {
             Boolean returnedValue = false;
 
-            IAlert alertPresent;
+            IAlert alertPresent = SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(buttonImage);
 
             return alertPresent;
         }
