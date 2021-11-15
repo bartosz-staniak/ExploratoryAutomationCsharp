@@ -131,7 +131,7 @@ namespace PageObjectPatternDemo
         public static void SwitchToAlert(IWebDriver webDriver)
         {
             var alertPopUp = webDriver.SwitchTo().Alert();
-            Assert.AreEqual(alertPopUp.Text, "A test alert");
+            Assert.AreEqual(alertPopUp.Text, "A test aler");
         }
 
     }
