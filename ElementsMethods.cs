@@ -112,8 +112,6 @@ namespace PageObjectPatternDemo
             Boolean returnedValue = false;
 
             IAlert alertPresent = SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent().Invoke(webDriver);
-
-            return alertPresent;
         }
 
         public static void DismissAlert(IWebDriver webDriver)
