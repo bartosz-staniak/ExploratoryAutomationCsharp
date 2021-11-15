@@ -95,6 +95,12 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
+        public void DismissAlertTest()
+        {
+
+        }
+
+        [TestMethod]
         public void WipElementsPresenceTest()
         {
             try
