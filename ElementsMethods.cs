@@ -107,6 +107,11 @@ namespace PageObjectPatternDemo
 
         public static By alertButton = By.Id("alertButton");
 
+        public static void TriggerAlert(IWebDriver webDriver)
+        {
+            webDriver.FindElement(alertButton).Click();
+        }
+
         Boolean IsAlertPresent()
         {
             Boolean returnedValue = false;
@@ -123,10 +128,6 @@ namespace PageObjectPatternDemo
             }
         }
 
-        public static void TriggerAlert(IWebDriver webDriver)
-        {
-            webDriver.FindElement(alertButton).Click();
-        }
     }
 
     public class RedundantElements : InitialClass
