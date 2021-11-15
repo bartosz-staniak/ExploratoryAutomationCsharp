@@ -99,7 +99,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                AlertButton.TriggerAlert();
+                AlertButton.TriggerAlert(webDriver);
             }
             finally
             {
