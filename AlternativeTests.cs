@@ -97,7 +97,14 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void DismissAlertTest()
         {
+            try
+            {
 
+            }
+            finally
+            {
+                webDriver.Quit();
+            }
         }
 
         [TestMethod]
