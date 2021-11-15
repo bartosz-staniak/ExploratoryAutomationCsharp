@@ -128,6 +128,11 @@ namespace PageObjectPatternDemo
             }
         }
 
+        public static void SwitchToAlert()
+        {
+
+        }
+
     }
 
     public class RedundantElements : InitialClass
