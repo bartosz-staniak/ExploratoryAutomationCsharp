@@ -126,8 +126,6 @@ namespace PageObjectPatternDemo
         public static void DismissAlert(IWebDriver webDriver)
         {
             webDriver.FindElement(alertButton).Click();
-
-            Assert.IsTrue();
         }
     }
 
