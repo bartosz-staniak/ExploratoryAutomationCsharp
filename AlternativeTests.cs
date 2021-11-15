@@ -99,7 +99,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                AlertButton alertButton = new AlertButton(webDriver);
+                AlertButton alertButtonInstance = new AlertButton(webDriver);
             }
             finally
             {
