@@ -100,6 +100,7 @@ namespace PageObjectPatternDemo
             try
             {
                 AlertButton.TriggerAlert(webDriver);
+                System.Threading.Thread.Sleep(5000);
             }
             finally
             {
