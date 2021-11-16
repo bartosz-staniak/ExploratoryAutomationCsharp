@@ -131,7 +131,7 @@ namespace PageObjectPatternDemo
         public static void DismissAlert(IWebDriver webDriver, String testedAlertTextString)
         {
             var alertPopUp = webDriver.SwitchTo().Alert();
-            Assert.AreEqual(alertPopUp.Text, "A test alert");
+            Assert.AreEqual(alertPopUp.Text, testedAlertTextString);
         }
 
     }
