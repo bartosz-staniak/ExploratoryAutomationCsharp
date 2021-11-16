@@ -103,7 +103,7 @@ namespace PageObjectPatternDemo
                 System.Threading.Thread.Sleep(5000);
                 Assert.IsTrue(AlertButton.IsAlertPresent(webDriver));
 
-                AlertButton.SwitchToAlert(webDriver);
+                AlertButton.DismissAlert(webDriver);
             }
             finally
             {
