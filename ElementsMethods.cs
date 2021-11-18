@@ -136,7 +136,7 @@ namespace PageObjectPatternDemo
 
         public static void AcceptAlert(IWebDriver webDriver)
         {
-            AlertButton.DismissAlert(webDriver, "A test alert");
+            AlertButton.VerifyAlertPresence(webDriver, "A test alert");
             webDriver.SwitchTo().Alert().Accept();
         }
 
