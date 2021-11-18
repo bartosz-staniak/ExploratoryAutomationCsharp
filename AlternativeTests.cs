@@ -112,6 +112,23 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
+        public void DismissAlertTest()//wip
+        {
+            try
+            {
+                AlertButton.TriggerAlert(webDriver);
+                System.Threading.Thread.Sleep(5000);
+                Assert.IsTrue(AlertButton.IsAlertPresent(webDriver));
+
+                AlertButton.VerifyAlertPresence(webDriver, "A test alert");
+            }
+            finally
+            {
+                webDriver.Quit();
+            }
+        }
+
+        [TestMethod]
         public void WipElementsPresenceTest()
         {
             try
