@@ -128,7 +128,7 @@ namespace PageObjectPatternDemo
             }
         }
 
-        public static void DismissAlert(IWebDriver webDriver, String testedAlertTextString)
+        public static void VerifyAlertPresence(IWebDriver webDriver, String testedAlertTextString)
         {
             var alertPopUp = webDriver.SwitchTo().Alert();
             Assert.AreEqual(alertPopUp.Text, testedAlertTextString);
