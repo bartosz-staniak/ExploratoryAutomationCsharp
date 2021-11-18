@@ -112,7 +112,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void DismissAlertTest()//wip
+        public void AcceptAlertTest()//wip
         {
             try
             {
