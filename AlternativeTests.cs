@@ -120,7 +120,7 @@ namespace PageObjectPatternDemo
                 System.Threading.Thread.Sleep(5000);
                 Assert.IsTrue(AlertButton.IsAlertPresent(webDriver));
 
-                AlertButton.VerifyAlertPresence(webDriver, "A test alert");
+                AlertButton.AcceptAlert(webDriver);
             }
             finally
             {
