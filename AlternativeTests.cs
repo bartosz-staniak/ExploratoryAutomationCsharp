@@ -121,6 +121,7 @@ namespace PageObjectPatternDemo
                 Assert.IsTrue(AlertButton.IsAlertPresent(webDriver));
 
                 AlertButton.AcceptAlert(webDriver);
+                Assert.IsFalse(AlertButton.IsAlertPresent(webDriver));
             }
             finally
             {
