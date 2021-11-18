@@ -134,6 +134,11 @@ namespace PageObjectPatternDemo
             Assert.AreEqual(alertPopUp.Text, testedAlertTextString);
         }
 
+        public static void AcceptAlert(IWebDriver webDriver)
+        {
+            
+        }
+
     }
 
     public class RedundantElements : InitialClass
