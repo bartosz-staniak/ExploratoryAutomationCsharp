@@ -113,6 +113,22 @@ namespace PageObjectPatternDemo
         {
             webDriver.FindElement(popUpTriggerButton).Click();
         }
+
+        public static Boolean IsAlertPresent(IWebDriver webDriver)
+        {
+            Boolean returnedValue = false;
+
+            IAlert alertPresent = SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent().Invoke(webDriver);
+
+            if (alertPresent != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
     public class AlertButtonClass : InitialClass
