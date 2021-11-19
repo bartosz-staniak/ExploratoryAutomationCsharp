@@ -98,11 +98,11 @@ namespace PageObjectPatternDemo
 
     }
 
-    public class PopUpButtonClass : InitialClass
+    public class PopUpMethodsClass : InitialClass
     {
         public By popUpTriggerButton;
 
-        public PopUpButtonClass(IWebDriver driver, String elementId) : base(driver)
+        public PopUpMethodsClass(IWebDriver driver, String elementId) : base(driver)
         {
             popUpTriggerButton = By.Id(elementId);
         }
