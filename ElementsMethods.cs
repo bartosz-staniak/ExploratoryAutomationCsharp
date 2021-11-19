@@ -114,7 +114,7 @@ namespace PageObjectPatternDemo
             webDriver.FindElement(popUpTriggerButton).Click();
         }
 
-        public static Boolean IsAlertPresent(IWebDriver webDriver)
+        public static Boolean IsPopUpPresent(IWebDriver webDriver)
         {
             Boolean returnedValue = false;
 
