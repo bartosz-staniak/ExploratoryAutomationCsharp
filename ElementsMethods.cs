@@ -98,6 +98,14 @@ namespace PageObjectPatternDemo
 
     }
 
+    public class PopUpButtonClass : InitialClass
+    {
+        public PopUpButtonClass(IWebDriver driver) : base(driver)
+        {
+
+        }
+    }
+
     public class AlertButtonClass : InitialClass
     {
         public AlertButtonClass(IWebDriver driver) : base(driver)
