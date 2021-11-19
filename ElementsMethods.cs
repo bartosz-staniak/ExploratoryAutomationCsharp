@@ -103,12 +103,12 @@ namespace PageObjectPatternDemo
         String _element;
         public By popUpTriggerButton;
 
-        public PopUpButtonClass(IWebDriver driver, String element) : base(driver)
+        public PopUpButtonClass(IWebDriver driver, String elementId) : base(driver)
         {
             _element = element;
             _element.Replace("\"", "");
 
-            popUpTriggerButton = By.Id(element);
+            popUpTriggerButton = By.Id(elementId);
         }
 
         // public By popUpTriggerButton = By.Id(_element);//this line is executed before the constructor thus it complains of a null
