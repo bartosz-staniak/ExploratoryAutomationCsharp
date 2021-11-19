@@ -109,7 +109,7 @@ namespace PageObjectPatternDemo
 
         public static By popUpTriggerButton = By.Id(_element);//wip
 
-        public static void TriggerPopUp(IWebDriver webDriver)
+        public void TriggerPopUp(IWebDriver webDriver)
         {
             webDriver.FindElement(popUpTriggerButton).Click();
         }
