@@ -121,7 +121,7 @@ namespace PageObjectPatternDemo
 
                 Assert.IsTrue(PopUpMethodsClass.IsPopUpPresent(webDriver));
 
-                AlertButtonClass.AcceptAlert(webDriver);
+                PopUpMethodsClass.AcceptPopUp(webDriver);
                 Assert.IsFalse(AlertButtonClass.IsAlertPresent(webDriver));
             }
             finally
