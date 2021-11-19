@@ -142,6 +142,11 @@ namespace PageObjectPatternDemo
 
     }
 
+    public class PromptButton : InitialClass
+    {
+
+    }
+
     public class RedundantElements : InitialClass
     {
         public RedundantElements(IWebDriver driver) : base (driver)
