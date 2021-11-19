@@ -134,9 +134,9 @@ namespace PageObjectPatternDemo
             Assert.AreEqual(PopUp.Text, testedPopUpTextString);
         }
 
-        public static void AcceptAlert(IWebDriver webDriver)
+        public static void AcceptPopUp(IWebDriver webDriver)
         {
-            AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
+            PopUpButtonClass.VerifyPopUpPresence(webDriver, "A test alert");
             webDriver.SwitchTo().Alert().Accept();
         }
     }
