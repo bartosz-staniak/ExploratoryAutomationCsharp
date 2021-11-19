@@ -95,7 +95,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void DismissAlertTest()//wip
+        public void VerifyAlertPresenceTest()//wip
         {
             try
             {
