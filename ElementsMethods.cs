@@ -136,7 +136,6 @@ namespace PageObjectPatternDemo
 
         public static void AcceptPopUp(IWebDriver webDriver)
         {
-            PopUpButtonClass.VerifyPopUpPresence(webDriver, "A test alert");
             webDriver.SwitchTo().Alert().Accept();
         }
     }
