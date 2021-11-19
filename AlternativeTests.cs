@@ -134,7 +134,11 @@ namespace PageObjectPatternDemo
         {
             try
             {
+                AlertButtonClass.TriggerAlert(webDriver);
+                System.Threading.Thread.Sleep(5000);
+                Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
 
+                AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
             }
             finally
             {
