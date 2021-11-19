@@ -102,7 +102,7 @@ namespace PageObjectPatternDemo
     {
         static String _element;
 
-        public PopUpButtonClass(IWebDriver driver, String element) : base(driver, element)
+        public PopUpButtonClass(IWebDriver driver, String element) : base(driver)
         {
             _element = element;
             _element.Replace("\"", "");
