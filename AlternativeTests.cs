@@ -147,7 +147,7 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
-        public void VerifyPromptPreseceTest()
+        public void VerifyPopUpPreseceTest()
         {
             try
             {
