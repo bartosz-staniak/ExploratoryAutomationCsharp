@@ -128,10 +128,10 @@ namespace PageObjectPatternDemo
             }
         }
 
-        public static void VerifyAlertPresence(IWebDriver webDriver, String testedAlertTextString)
+        public static void VerifyPopUpPresence(IWebDriver webDriver, String testedPopUpTextString)
         {
-            var alertPopUp = webDriver.SwitchTo().Alert();
-            Assert.AreEqual(alertPopUp.Text, testedAlertTextString);
+            var PopUp = webDriver.SwitchTo().Alert();
+            Assert.AreEqual(PopUp.Text, testedPopUpTextString);
         }
 
         public static void AcceptAlert(IWebDriver webDriver)
