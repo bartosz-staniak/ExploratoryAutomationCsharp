@@ -108,7 +108,7 @@ namespace PageObjectPatternDemo
             _element.Replace("\"", "");
         }
 
-        public By popUpTriggerButton = By.Id("alertButton");//wip
+        public By popUpTriggerButton = By.Id("_element");//this line is executed before the constructor thus it complains of a null
 
         public void TriggerPopUp(IWebDriver webDriver)
         {
