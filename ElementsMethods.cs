@@ -104,6 +104,8 @@ namespace PageObjectPatternDemo
         {
 
         }
+
+        public static By popUpTriggerButton = By.Id("");//wip
     }
 
     public class AlertButtonClass : InitialClass
