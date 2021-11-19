@@ -100,6 +100,8 @@ namespace PageObjectPatternDemo
 
     public class PopUpButtonClass : InitialClass
     {
+        String _element;
+
         public PopUpButtonClass(IWebDriver driver, String element) : base(driver)
         {
             String _element = element;
