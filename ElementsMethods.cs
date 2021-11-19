@@ -148,6 +148,8 @@ namespace PageObjectPatternDemo
         {
 
         }
+
+        public static By promptButton = By.Id("promptButton");
     }
 
     public class RedundantElements : InitialClass
