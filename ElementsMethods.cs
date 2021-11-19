@@ -100,7 +100,7 @@ namespace PageObjectPatternDemo
 
     public class PopUpButtonClass : InitialClass
     {
-        public PopUpButtonClass(IWebDriver driver) : base(driver)
+        public PopUpButtonClass(IWebDriver driver, String element) : base(driver)
         {
 
         }
