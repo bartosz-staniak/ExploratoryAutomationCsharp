@@ -99,11 +99,11 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                AlertButtonClass.TriggerAlert(webDriver);
+                PopUpMethodsClass.VerifyPopUpPresence(webDriver, "A test alert");
                 System.Threading.Thread.Sleep(5000);
-                Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
+                Assert.IsTrue(PopUpMethodsClass.IsPopUpPresent(webDriver));
 
-                AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
+                PopUpMethodsClass.VerifyPopUpPresence(webDriver, "A test alert");
             }
             finally
             {
