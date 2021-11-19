@@ -132,7 +132,14 @@ namespace PageObjectPatternDemo
         [TestMethod]
         public void VerifyPromptPresenceTest()
         {
+            try
+            {
 
+            }
+            finally
+            {
+                webDriver.Quit();
+            }
         }
 
         [TestMethod]
