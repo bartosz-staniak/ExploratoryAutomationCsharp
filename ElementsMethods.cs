@@ -98,9 +98,9 @@ namespace PageObjectPatternDemo
 
     }
 
-    public class AlertButton : InitialClass
+    public class AlertButtonClass : InitialClass
     {
-        public AlertButton(IWebDriver driver) : base(driver)
+        public AlertButtonClass(IWebDriver driver) : base(driver)
         {
 
         }
@@ -136,7 +136,7 @@ namespace PageObjectPatternDemo
 
         public static void AcceptAlert(IWebDriver webDriver)
         {
-            AlertButton.VerifyAlertPresence(webDriver, "A test alert");
+            AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
             webDriver.SwitchTo().Alert().Accept();
         }
 
