@@ -150,6 +150,11 @@ namespace PageObjectPatternDemo
         }
 
         public static By promptButton = By.Id("promptButton");
+
+        public static void TriggerPrompt(IWebDriver webDriver)
+        {
+            webDriver.FindElement(promptButton).Click();
+        }
     }
 
     public class RedundantElements : InitialClass
