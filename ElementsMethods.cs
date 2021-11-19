@@ -102,13 +102,13 @@ namespace PageObjectPatternDemo
     {
         static String _element;
 
-        public PopUpButtonClass(IWebDriver driver, String element) : base(driver)
+        public PopUpButtonClass(IWebDriver driver, String element) : base(driver, element)
         {
             _element = element;
             _element.Replace("\"", "");
         }
 
-        public static By popUpTriggerButton = By.Id(_element);//wip
+        public By popUpTriggerButton = By.Id(_element);//wip
 
         public void TriggerPopUp(IWebDriver webDriver)
         {
