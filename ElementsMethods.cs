@@ -127,6 +127,18 @@ namespace PageObjectPatternDemo
                 return false;
             }
         }
+
+        public static void VerifyAlertPresence(IWebDriver webDriver, String testedAlertTextString)
+        {
+            var alertPopUp = webDriver.SwitchTo().Alert();
+            Assert.AreEqual(alertPopUp.Text, testedAlertTextString);
+        }
+
+        public static void AcceptAlert(IWebDriver webDriver)
+        {
+            AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
+            webDriver.SwitchTo().Alert().Accept();
+        }
     }
 
     public class AlertButtonClass : InitialClass
