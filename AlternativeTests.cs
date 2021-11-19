@@ -155,7 +155,7 @@ namespace PageObjectPatternDemo
                 popUpButtonClass.TriggerPopUp(webDriver);
                 Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
 
-                AlertButtonClass.VerifyAlertPresence(webDriver, "A test prompt");
+                AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
             }
             finally
             {
