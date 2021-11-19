@@ -130,6 +130,12 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
+        public void VerifyPromptPresenceTest()
+        {
+
+        }
+
+        [TestMethod]
         public void WipElementsPresenceTest()
         {
             try
