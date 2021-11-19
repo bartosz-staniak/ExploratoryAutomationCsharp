@@ -108,7 +108,7 @@ namespace PageObjectPatternDemo
             _element.Replace("\"", "");
         }
 
-        public By popUpTriggerButton = By.Id("");//wip
+        public By popUpTriggerButton = By.Id("promptButton");//wip
 
         public void TriggerPopUp(IWebDriver webDriver)
         {
