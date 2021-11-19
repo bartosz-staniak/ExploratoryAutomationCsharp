@@ -116,8 +116,6 @@ namespace PageObjectPatternDemo
 
         public static Boolean IsPopUpPresent(IWebDriver webDriver)
         {
-            Boolean returnedValue = false;
-
             IAlert alertPresent = SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent().Invoke(webDriver);
 
             if (alertPresent != null)
