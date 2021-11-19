@@ -99,11 +99,11 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                AlertButton.TriggerAlert(webDriver);
+                AlertButtonClass.TriggerAlert(webDriver);
                 System.Threading.Thread.Sleep(5000);
-                Assert.IsTrue(AlertButton.IsAlertPresent(webDriver));
+                Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
 
-                AlertButton.VerifyAlertPresence(webDriver, "A test alert");
+                AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
             }
             finally
             {
@@ -116,12 +116,12 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                AlertButton.TriggerAlert(webDriver);
+                AlertButtonClass.TriggerAlert(webDriver);
                 System.Threading.Thread.Sleep(5000);
-                Assert.IsTrue(AlertButton.IsAlertPresent(webDriver));
+                Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
 
-                AlertButton.AcceptAlert(webDriver);
-                Assert.IsFalse(AlertButton.IsAlertPresent(webDriver));
+                AlertButtonClass.AcceptAlert(webDriver);
+                Assert.IsFalse(AlertButtonClass.IsAlertPresent(webDriver));
             }
             finally
             {
