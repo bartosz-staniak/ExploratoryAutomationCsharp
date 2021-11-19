@@ -107,6 +107,8 @@ namespace PageObjectPatternDemo
         {
             _element = element;
             _element.Replace("\"", "");
+
+            popUpTriggerButton = By.Id(_element);
         }
 
         // public By popUpTriggerButton = By.Id(_element);//this line is executed before the constructor thus it complains of a null
