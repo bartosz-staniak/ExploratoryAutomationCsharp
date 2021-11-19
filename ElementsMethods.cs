@@ -105,6 +105,7 @@ namespace PageObjectPatternDemo
         public PopUpButtonClass(IWebDriver driver, String element) : base(driver)
         {
             _element = element;
+            _element.Replace("\"", "");
         }
 
         public static By popUpTriggerButton = By.Id(_element);//wip
