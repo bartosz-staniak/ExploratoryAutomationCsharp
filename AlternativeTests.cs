@@ -147,6 +147,22 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
+        public void VerifyPromptPreseceTest()
+        {
+            try
+            {
+                PopUpButtonClass popUpButtonClass = new PopUpButtonClass(webDriver, "alertButton");
+                Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
+
+                AlertButtonClass.VerifyAlertPresence(webDriver, "A test prompt");
+            }
+            finally
+            {
+                webDriver.Quit();
+            }
+        }
+
+        [TestMethod]
         public void WipElementsPresenceTest()
         {
             try
