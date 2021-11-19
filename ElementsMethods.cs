@@ -140,66 +140,6 @@ namespace PageObjectPatternDemo
         }
     }
 
-    public class AlertButtonClass : InitialClass
-    {
-        public AlertButtonClass(IWebDriver driver) : base(driver)
-        {
-
-        }
-
-        public static By alertButton = By.Id("alertButton");
-
-        public static void TriggerAlert(IWebDriver webDriver)
-        {
-            webDriver.FindElement(alertButton).Click();
-        }
-
-        public static Boolean IsAlertPresent(IWebDriver webDriver)
-        {
-            Boolean returnedValue = false;
-
-            IAlert alertPresent = SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent().Invoke(webDriver);
-
-            if (alertPresent != null)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public static void VerifyAlertPresence(IWebDriver webDriver, String testedAlertTextString)
-        {
-            var alertPopUp = webDriver.SwitchTo().Alert();
-            Assert.AreEqual(alertPopUp.Text, testedAlertTextString);
-        }
-
-        public static void AcceptAlert(IWebDriver webDriver)
-        {
-            AlertButtonClass.VerifyAlertPresence(webDriver, "A test alert");
-            webDriver.SwitchTo().Alert().Accept();
-        }
-
-    }
-
-    public class PromptButtonClass : InitialClass
-    {
-        PromptButtonClass(IWebDriver driver) : base(driver)
-        {
-
-        }
-
-        public static By promptButton = By.Id("promptButton");
-
-        public static void TriggerPrompt(IWebDriver webDriver)
-        {
-            webDriver.FindElement(promptButton).Click();
-        }
-
-    }
-
     public class RedundantElements : InitialClass
     {
         public RedundantElements(IWebDriver driver) : base (driver)
