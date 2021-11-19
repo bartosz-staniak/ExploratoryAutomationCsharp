@@ -119,6 +119,7 @@ namespace PageObjectPatternDemo
                 PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "alertButton"); //more flexible yet cannot disconnect the user from the implementation this way
                 popUpMethodsClass.TriggerPopUp(webDriver);
 
+                Assert.IsTrue(PopUpMethodsClass.IsPopUpPresent(webDriver));
                 Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
 
                 AlertButtonClass.AcceptAlert(webDriver);
