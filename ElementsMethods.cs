@@ -142,7 +142,7 @@ namespace PageObjectPatternDemo
 
     }
 
-    public class PromptButton : InitialClass
+    public class PromptButtonClass : InitialClass
     {
 
     }
