@@ -122,7 +122,7 @@ namespace PageObjectPatternDemo
                 Assert.IsTrue(PopUpMethodsClass.IsPopUpPresent(webDriver));
 
                 PopUpMethodsClass.AcceptPopUp(webDriver);
-                Assert.IsFalse(AlertButtonClass.IsAlertPresent(webDriver));
+                Assert.IsFalse(PopUpMethodsClass.IsPopUpPresent(webDriver));
             }
             finally
             {
