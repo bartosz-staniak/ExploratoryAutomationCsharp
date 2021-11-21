@@ -137,8 +137,8 @@ namespace PageObjectPatternDemo
             {
                 PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "promptTrigger");
                 popUpMethodsClass.TriggerPopUp(webDriver);
-                
-                Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
+
+                Assert.IsTrue(PopUpMethodsClass.IsPopUpPresent(webDriver));
 
                 AlertButtonClass.VerifyAlertPresence(webDriver, "A test prompt");
             }
