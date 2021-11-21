@@ -99,7 +99,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-                PopUpMethodsClass.VerifyPopUpPresence(webDriver, "A test alert");
+                PopUpMethodsClass.VerifyPopUpPresence(webDriver, "alertButton");
                 System.Threading.Thread.Sleep(5000);
                 Assert.IsTrue(PopUpMethodsClass.IsPopUpPresent(webDriver));
 
