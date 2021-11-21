@@ -136,6 +136,7 @@ namespace PageObjectPatternDemo
             try
             {
                 PromptButtonClass.TriggerPrompt(webDriver);
+                PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "promptTrigger");
                 System.Threading.Thread.Sleep(5000);
                 Assert.IsTrue(AlertButtonClass.IsAlertPresent(webDriver));
 
