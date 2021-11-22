@@ -167,6 +167,19 @@ namespace PageObjectPatternDemo
         }
 
         [TestMethod]
+        public void VerifyAlertPresenceAfterAcceptingPrompt()
+        {
+            try
+            {
+
+            }
+            finally
+            {
+
+            }
+        }
+
+        [TestMethod]
         public void WipElementsPresenceTest()
         {
             try
