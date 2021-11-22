@@ -175,7 +175,7 @@ namespace PageObjectPatternDemo
             }
             finally
             {
-
+                webDriver.Quit();
             }
         }
 
