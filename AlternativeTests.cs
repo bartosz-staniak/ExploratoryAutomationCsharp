@@ -173,7 +173,7 @@ namespace PageObjectPatternDemo
             {
                 PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "promptButton");
                 popUpMethodsClass.TriggerPopUp(webDriver);
-                Assert.IsTrue(PopUpMethodsClass.IsPopUpPresent(webDriver));
+                PopUpMethodsClass.VerifyPopUpPresence(webDriver, "A test prompt");
             }
             finally
             {
