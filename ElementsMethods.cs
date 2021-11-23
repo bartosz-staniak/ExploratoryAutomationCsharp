@@ -141,7 +141,7 @@ namespace PageObjectPatternDemo
 
         public static void PopulatePromptInput(IWebDriver webDriver, String inputString)
         {
-            webDriver.SwitchTo().Alert().SendKeys(inputString);
+            webDriver.SwitchTo().Alert().SendKeys(inputString); // could try not switching to the alert again
         }
     }
 
