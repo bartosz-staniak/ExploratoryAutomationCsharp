@@ -138,6 +138,11 @@ namespace PageObjectPatternDemo
         {
             webDriver.SwitchTo().Alert().Accept();
         }
+
+        public static void PopulatePromptInput(IWebDriver webDriver, String inputString)
+        {
+
+        }
     }
 
     public class RedundantElements : InitialClass
