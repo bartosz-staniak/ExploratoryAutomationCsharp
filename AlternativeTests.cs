@@ -171,7 +171,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
-
+                PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "promptButton");
             }
             finally
             {
