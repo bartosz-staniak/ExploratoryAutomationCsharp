@@ -172,6 +172,7 @@ namespace PageObjectPatternDemo
             try
             {
                 PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "promptButton");
+                popUpMethodsClass.TriggerPopUp(webDriver);
             }
             finally
             {
