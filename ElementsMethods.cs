@@ -138,7 +138,7 @@ namespace PageObjectPatternDemo
         {
             IAlert alert = webDriver.SwitchTo().Alert();
             Assert.AreEqual(alert.Text, testedPopUpTextSTring);
-            alert.SendKeys(inputString);
+            alert.SendKeys(inputString); // does not work
         }
 
         public static void AcceptPopUp(IWebDriver webDriver)
