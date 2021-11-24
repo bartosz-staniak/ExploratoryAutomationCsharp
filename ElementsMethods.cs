@@ -137,6 +137,7 @@ namespace PageObjectPatternDemo
         public static void VerifyPopUpPresenceAndSendKeys(IWebDriver webDriver, String testedPopUpTextSTring, String inputString)
         {
             IAlert alert = webDriver.SwitchTo().Alert();
+            Assert.AreEqual(alert.Text, testedPopUpTextSTring);
         }
 
         public static void AcceptPopUp(IWebDriver webDriver)
