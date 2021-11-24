@@ -173,7 +173,7 @@ namespace PageObjectPatternDemo
             {
                 PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "promptButton");
                 popUpMethodsClass.TriggerPopUp(webDriver);
-                PopUpMethodsClass.VerifyPopUpPresence(webDriver, "A test prompt");
+                // PopUpMethodsClass.VerifyPopUpPresence(webDriver, "A test prompt");
                 // PopUpMethodsClass.PopulatePromptInput(webDriver, "A test input string"); // does not work
                 PopUpMethodsClass.VerifyPopUpPresenceAndSendKeys(webDriver, "A test prompt", "A test input string");
                 System.Threading.Thread.Sleep(5000);
