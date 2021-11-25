@@ -171,6 +171,7 @@ namespace PageObjectPatternDemo
         {
             try
             {
+                string triggerElementId = "promptButton";
                 string testedInputString = "A test input string";
                 string testedPopUpText = "A test prompt";
                 PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, "promptButton");
