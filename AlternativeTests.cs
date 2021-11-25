@@ -174,6 +174,7 @@ namespace PageObjectPatternDemo
                 string triggerElementId = "promptButton";
                 string testedInputString = "A test input string";
                 string testedPopUpText = "A test prompt";
+
                 PopUpMethodsClass popUpMethodsClass = new PopUpMethodsClass(webDriver, triggerElementId);
                 popUpMethodsClass.TriggerPopUp(webDriver);
                 PopUpMethodsClass.VerifyPopUpSendKeysAccept(webDriver, testedPopUpText, testedInputString);
