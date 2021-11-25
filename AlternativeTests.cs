@@ -179,7 +179,6 @@ namespace PageObjectPatternDemo
                 popUpMethodsClass.TriggerPopUp(webDriver);
                 PopUpMethodsClass.VerifyPopUpSendKeysAccept(webDriver, testedPopUpText, testedInputString);
                 PopUpMethodsClass.VerifyPopUpPresence(webDriver, testedInputString);
-                System.Threading.Thread.Sleep(5000);
             }
             finally
             {
